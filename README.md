@@ -14,5 +14,26 @@ To use the package in your own programs/notebooks, import it using
 
 <code> import tes </code>
 
-# Installation 
+# Installation
+
+We recommend that you create a virtual enviroment using conda to work and develop this package.
+
+After downloading the contents of this repository to your machine, you can install the package using the terminal. 
+
+First open the folder where you installed the contents of this repository. 
+
+Then, install the package using:
+
+<code> python setup.py install </code>
+
+# Requirements
+
+The tes package requires: 
+
+- numpy
+- scipy
+- matplotlib
+- numba
+- yaml
+- pyserial
 
