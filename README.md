@@ -5,10 +5,14 @@ Python package responsible to establish communication and control the setting of
 # Usage
 
 After downloading the files in this package to your computer, use the Jupyter notebooks on the folder 'Jupyter Notebooks' to use the package for: 
-- Configure the multi-channel analyser (MCA)
-- Configure the measurements made by the hardware processor on the TES pulses
-- Calibrate the TES detectors
-- Transform area measurements in photon number information 
+- Configure the multi-channel analyser (MCA);
+- Configure the measurements made by the hardware processor on the TES pulses;
+- Calibrate the TES detectors;
+- Transform area measurements in photon number information.
+
+To use the package in your own programs/notebooks, import it using 
+
+<code> import tes </code>
 
 # Installation 
 
