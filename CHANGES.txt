@@ -1,0 +1,4 @@
+New in 0.2.0:
+
+- tes.registers.Register bug fixed for yaml.Load
+- new modules: calibration.py, counts.py, data_acquisition.py, folder_management.py, mca_control.py, traces.py
