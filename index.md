@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+# tespackage
 
-You can use the [editor on GitHub](https://github.com/Leo-am/tespackage/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Python package responsible to establish communication and control the setting of the hardware processor for the transition-edge sensors at the Quantum Technology Lab (QTLab), University of Queensland.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Usage
 
-### Markdown
+After downloading the files in this package to your computer, use the Jupyter notebooks on the folder 'Jupyter Notebooks' to use the package for: 
+- Configure the multi-channel analyser (MCA);
+- Configure the measurements made by the hardware processor on the TES pulses;
+- Calibrate the TES detectors;
+- Transform area measurements in photon number information.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+To use the package in your own programs/notebooks, import it using 
 
-```markdown
-Syntax highlighted code block
+<code> import tes </code>
 
-# Header 1
-## Header 2
-### Header 3
+# Installation
 
-- Bulleted
-- List
+We recommend that you create a virtual enviroment using conda to work and develop this package.
 
-1. Numbered
-2. List
+After downloading the contents of this repository to your machine, you can install the package using the terminal. 
 
-**Bold** and _Italic_ and `Code` text
+First open the folder where you installed the contents of this repository. 
 
-[Link](url) and ![Image](src)
-```
+Then, install the package using:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<code> python setup.py install </code>
 
-### Jekyll Themes
+# Requirements
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Leo-am/tespackage/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+The tes package requires: 
 
-### Support or Contact
+- numpy
+- scipy
+- matplotlib
+- numba
+- yaml
+- pyserial
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
