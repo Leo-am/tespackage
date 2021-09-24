@@ -4,4 +4,4 @@ site_author: Leonardo Assis Morais
 site_description: Documentation for tes package.
 
 nav:
-  - About: index.md
+  - About: docs/index.md
