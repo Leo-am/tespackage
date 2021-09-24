@@ -5,3 +5,4 @@ tes
    :maxdepth: 4
 
    tes
+   analysis
