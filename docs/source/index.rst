@@ -1,10 +1,10 @@
 tespackage
-===
+==========
 
 Python package responsible to establish communication and control the setting of the hardware processor for the transition-edge sensors at the Quantum Technology Lab (QTLab), University of Queensland.
 
 Usage
-===
+=====
 
 After downloading the files in this package to your computer, use the Jupyter notebooks on the folder 'Jupyter Notebooks' to use the package for: 
 - Configure the multi-channel analyser (MCA);
@@ -17,7 +17,7 @@ To use the package in your own programs/notebooks, import it using
 <code> import tes </code>
 
 Installation
-===
+============
 
 We recommend that you create a virtual enviroment using conda to work and develop this package.
 
@@ -30,7 +30,7 @@ Then, install the package using:
 <code> python setup.py install </code>
 
 Requirements
-===
+============
 
 The tes package requires: 
 
