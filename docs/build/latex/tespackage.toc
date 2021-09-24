@@ -1,0 +1,25 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Contents}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Usage}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Installation}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Requirements}{3}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}tes}{4}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}tes package}{4}{subsection.1.2.1}
+\contentsline {subsubsection}{Submodules}{4}{subsubsection*.3}
+\contentsline {subsubsection}{tes.analysis module}{4}{subsubsection*.4}
+\contentsline {subsubsection}{tes.base module}{11}{subsubsection*.52}
+\contentsline {subsubsection}{tes.calibration module}{13}{subsubsection*.95}
+\contentsline {subsubsection}{tes.counts module}{16}{subsubsection*.106}
+\contentsline {subsubsection}{tes.data module}{18}{subsubsection*.115}
+\contentsline {subsubsection}{tes.data\_acquisition module}{19}{subsubsection*.125}
+\contentsline {subsubsection}{tes.folder\_management module}{20}{subsubsection*.128}
+\contentsline {subsubsection}{tes.maps module}{21}{subsubsection*.131}
+\contentsline {subsubsection}{tes.mca module}{22}{subsubsection*.136}
+\contentsline {subsubsection}{tes.mca\_control module}{24}{subsubsection*.192}
+\contentsline {subsubsection}{tes.protocol module}{26}{subsubsection*.198}
+\contentsline {subsubsection}{tes.registers module}{26}{subsubsection*.206}
+\contentsline {subsubsection}{tes.traces module}{27}{subsubsection*.216}
+\contentsline {subsubsection}{Module contents}{29}{subsubsection*.222}
+\contentsline {chapter}{\numberline {2}Indices and tables}{31}{chapter.2}
+\contentsline {chapter}{Python Module Index}{33}{section*.223}
+\contentsline {chapter}{Index}{35}{section*.224}

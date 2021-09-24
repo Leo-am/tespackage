@@ -1,0 +1,233 @@
+\indexentry{module@\spxentry{module}!tes.analysis@\spxentry{tes.analysis}|hyperpage}{4}
+\indexentry{tes.analysis@\spxentry{tes.analysis}!module@\spxentry{module}|hyperpage}{4}
+\indexentry{Counts (class in tes.analysis)@\spxentry{Counts}\spxextra{class in tes.analysis}|hyperpage}{4}
+\indexentry{count (tes.analysis.Counts property)@\spxentry{count}\spxextra{tes.analysis.Counts property}|hyperpage}{4}
+\indexentry{has\_noise\_threshold (tes.analysis.Counts property)@\spxentry{has\_noise\_threshold}\spxextra{tes.analysis.Counts property}|hyperpage}{4}
+\indexentry{uncorrelated (tes.analysis.Counts property)@\spxentry{uncorrelated}\spxextra{tes.analysis.Counts property}|hyperpage}{4}
+\indexentry{vacuum (tes.analysis.Counts property)@\spxentry{vacuum}\spxextra{tes.analysis.Counts property}|hyperpage}{4}
+\indexentry{Guess (class in tes.analysis)@\spxentry{Guess}\spxextra{class in tes.analysis}|hyperpage}{4}
+\indexentry{bin\_c (tes.analysis.Guess property)@\spxentry{bin\_c}\spxextra{tes.analysis.Guess property}|hyperpage}{4}
+\indexentry{f (tes.analysis.Guess property)@\spxentry{f}\spxextra{tes.analysis.Guess property}|hyperpage}{4}
+\indexentry{hist (tes.analysis.Guess property)@\spxentry{hist}\spxextra{tes.analysis.Guess property}|hyperpage}{4}
+\indexentry{max\_i (tes.analysis.Guess property)@\spxentry{max\_i}\spxextra{tes.analysis.Guess property}|hyperpage}{4}
+\indexentry{thresholds (tes.analysis.Guess property)@\spxentry{thresholds}\spxextra{tes.analysis.Guess property}|hyperpage}{4}
+\indexentry{MixtureModel (class in tes.analysis)@\spxentry{MixtureModel}\spxextra{class in tes.analysis}|hyperpage}{4}
+\indexentry{cdf() (tes.analysis.MixtureModel method)@\spxentry{cdf()}\spxextra{tes.analysis.MixtureModel method}|hyperpage}{5}
+\indexentry{load() (tes.analysis.MixtureModel static method)@\spxentry{load()}\spxextra{tes.analysis.MixtureModel static method}|hyperpage}{5}
+\indexentry{pdf() (tes.analysis.MixtureModel method)@\spxentry{pdf()}\spxextra{tes.analysis.MixtureModel method}|hyperpage}{5}
+\indexentry{save() (tes.analysis.MixtureModel method)@\spxentry{save()}\spxextra{tes.analysis.MixtureModel method}|hyperpage}{5}
+\indexentry{Povm (in module tes.analysis)@\spxentry{Povm}\spxextra{in module tes.analysis}|hyperpage}{5}
+\indexentry{coherent\_ml() (in module tes.analysis)@\spxentry{coherent\_ml()}\spxextra{in module tes.analysis}|hyperpage}{5}
+\indexentry{coherent\_neg\_ll() (in module tes.analysis)@\spxentry{coherent\_neg\_ll()}\spxextra{in module tes.analysis}|hyperpage}{5}
+\indexentry{coincidence() (in module tes.analysis)@\spxentry{coincidence()}\spxextra{in module tes.analysis}|hyperpage}{5}
+\indexentry{count() (in module tes.analysis)@\spxentry{count()}\spxextra{in module tes.analysis}|hyperpage}{6}
+\indexentry{displaced\_thermal() (in module tes.analysis)@\spxentry{displaced\_thermal()}\spxextra{in module tes.analysis}|hyperpage}{6}
+\indexentry{displaced\_vacuum() (in module tes.analysis)@\spxentry{displaced\_vacuum()}\spxextra{in module tes.analysis}|hyperpage}{6}
+\indexentry{drive\_correlation() (in module tes.analysis)@\spxentry{drive\_correlation()}\spxextra{in module tes.analysis}|hyperpage}{6}
+\indexentry{expectation\_maximisation() (in module tes.analysis)@\spxentry{expectation\_maximisation()}\spxextra{in module tes.analysis}|hyperpage}{6}
+\indexentry{fit\_state\_least\_squares() (in module tes.analysis)@\spxentry{fit\_state\_least\_squares()}\spxextra{in module tes.analysis}|hyperpage}{7}
+\indexentry{guess\_thresholds() (in module tes.analysis)@\spxentry{guess\_thresholds()}\spxextra{in module tes.analysis}|hyperpage}{7}
+\indexentry{hard\_expectation() (in module tes.analysis)@\spxentry{hard\_expectation()}\spxextra{in module tes.analysis}|hyperpage}{7}
+\indexentry{hard\_maximisation() (in module tes.analysis)@\spxentry{hard\_maximisation()}\spxextra{in module tes.analysis}|hyperpage}{8}
+\indexentry{maxima() (in module tes.analysis)@\spxentry{maxima()}\spxextra{in module tes.analysis}|hyperpage}{8}
+\indexentry{mixture\_model\_ll() (in module tes.analysis)@\spxentry{mixture\_model\_ll()}\spxextra{in module tes.analysis}|hyperpage}{8}
+\indexentry{normalised\_pdf() (in module tes.analysis)@\spxentry{normalised\_pdf()}\spxextra{in module tes.analysis}|hyperpage}{8}
+\indexentry{outcome\_probabilities() (in module tes.analysis)@\spxentry{outcome\_probabilities()}\spxextra{in module tes.analysis}|hyperpage}{8}
+\indexentry{partition() (in module tes.analysis)@\spxentry{partition()}\spxextra{in module tes.analysis}|hyperpage}{8}
+\indexentry{plot\_guess() (in module tes.analysis)@\spxentry{plot\_guess()}\spxextra{in module tes.analysis}|hyperpage}{9}
+\indexentry{plot\_mixture\_model() (in module tes.analysis)@\spxentry{plot\_mixture\_model()}\spxextra{in module tes.analysis}|hyperpage}{9}
+\indexentry{plot\_state\_fit() (in module tes.analysis)@\spxentry{plot\_state\_fit()}\spxextra{in module tes.analysis}|hyperpage}{9}
+\indexentry{povm\_elements() (in module tes.analysis)@\spxentry{povm\_elements()}\spxextra{in module tes.analysis}|hyperpage}{9}
+\indexentry{resize\_vector() (in module tes.analysis)@\spxentry{resize\_vector()}\spxextra{in module tes.analysis}|hyperpage}{9}
+\indexentry{retime() (in module tes.analysis)@\spxentry{retime()}\spxextra{in module tes.analysis}|hyperpage}{9}
+\indexentry{scaled\_pdf() (in module tes.analysis)@\spxentry{scaled\_pdf()}\spxextra{in module tes.analysis}|hyperpage}{9}
+\indexentry{thermal\_ml() (in module tes.analysis)@\spxentry{thermal\_ml()}\spxextra{in module tes.analysis}|hyperpage}{10}
+\indexentry{thermal\_neg\_ll() (in module tes.analysis)@\spxentry{thermal\_neg\_ll()}\spxextra{in module tes.analysis}|hyperpage}{10}
+\indexentry{threshold\_masks() (in module tes.analysis)@\spxentry{threshold\_masks()}\spxextra{in module tes.analysis}|hyperpage}{10}
+\indexentry{window() (in module tes.analysis)@\spxentry{window()}\spxextra{in module tes.analysis}|hyperpage}{10}
+\indexentry{x\_correlation() (in module tes.analysis)@\spxentry{x\_correlation()}\spxextra{in module tes.analysis}|hyperpage}{10}
+\indexentry{xcor() (in module tes.analysis)@\spxentry{xcor()}\spxextra{in module tes.analysis}|hyperpage}{10}
+\indexentry{module@\spxentry{module}!tes.base@\spxentry{tes.base}|hyperpage}{11}
+\indexentry{tes.base@\spxentry{tes.base}!module@\spxentry{module}|hyperpage}{11}
+\indexentry{Detection (class in tes.base)@\spxentry{Detection}\spxextra{class in tes.base}|hyperpage}{11}
+\indexentry{area (tes.base.Detection attribute)@\spxentry{area}\spxextra{tes.base.Detection attribute}|hyperpage}{11}
+\indexentry{pulse (tes.base.Detection attribute)@\spxentry{pulse}\spxextra{tes.base.Detection attribute}|hyperpage}{11}
+\indexentry{rise (tes.base.Detection attribute)@\spxentry{rise}\spxextra{tes.base.Detection attribute}|hyperpage}{11}
+\indexentry{trace (tes.base.Detection attribute)@\spxentry{trace}\spxextra{tes.base.Detection attribute}|hyperpage}{11}
+\indexentry{Height (class in tes.base)@\spxentry{Height}\spxextra{class in tes.base}|hyperpage}{11}
+\indexentry{cfd\_height (tes.base.Height attribute)@\spxentry{cfd\_height}\spxextra{tes.base.Height attribute}|hyperpage}{11}
+\indexentry{cfd\_high (tes.base.Height attribute)@\spxentry{cfd\_high}\spxextra{tes.base.Height attribute}|hyperpage}{11}
+\indexentry{max\_slope (tes.base.Height attribute)@\spxentry{max\_slope}\spxextra{tes.base.Height attribute}|hyperpage}{11}
+\indexentry{peak (tes.base.Height attribute)@\spxentry{peak}\spxextra{tes.base.Height attribute}|hyperpage}{11}
+\indexentry{Payload (class in tes.base)@\spxentry{Payload}\spxextra{class in tes.base}|hyperpage}{11}
+\indexentry{area (tes.base.Payload attribute)@\spxentry{area}\spxextra{tes.base.Payload attribute}|hyperpage}{11}
+\indexentry{average\_trace (tes.base.Payload attribute)@\spxentry{average\_trace}\spxextra{tes.base.Payload attribute}|hyperpage}{11}
+\indexentry{bad\_frame (tes.base.Payload attribute)@\spxentry{bad\_frame}\spxextra{tes.base.Payload attribute}|hyperpage}{11}
+\indexentry{dot\_product (tes.base.Payload attribute)@\spxentry{dot\_product}\spxextra{tes.base.Payload attribute}|hyperpage}{11}
+\indexentry{dot\_product\_trace (tes.base.Payload attribute)@\spxentry{dot\_product\_trace}\spxextra{tes.base.Payload attribute}|hyperpage}{11}
+\indexentry{mca (tes.base.Payload attribute)@\spxentry{mca}\spxextra{tes.base.Payload attribute}|hyperpage}{11}
+\indexentry{pulse (tes.base.Payload attribute)@\spxentry{pulse}\spxextra{tes.base.Payload attribute}|hyperpage}{11}
+\indexentry{rise (tes.base.Payload attribute)@\spxentry{rise}\spxextra{tes.base.Payload attribute}|hyperpage}{11}
+\indexentry{single\_trace (tes.base.Payload attribute)@\spxentry{single\_trace}\spxextra{tes.base.Payload attribute}|hyperpage}{11}
+\indexentry{tick (tes.base.Payload attribute)@\spxentry{tick}\spxextra{tes.base.Payload attribute}|hyperpage}{11}
+\indexentry{Signal (class in tes.base)@\spxentry{Signal}\spxextra{class in tes.base}|hyperpage}{12}
+\indexentry{f (tes.base.Signal attribute)@\spxentry{f}\spxextra{tes.base.Signal attribute}|hyperpage}{12}
+\indexentry{none (tes.base.Signal attribute)@\spxentry{none}\spxextra{tes.base.Signal attribute}|hyperpage}{12}
+\indexentry{raw (tes.base.Signal attribute)@\spxentry{raw}\spxextra{tes.base.Signal attribute}|hyperpage}{12}
+\indexentry{s (tes.base.Signal attribute)@\spxentry{s}\spxextra{tes.base.Signal attribute}|hyperpage}{12}
+\indexentry{Timing (class in tes.base)@\spxentry{Timing}\spxextra{class in tes.base}|hyperpage}{12}
+\indexentry{cfd\_low (tes.base.Timing attribute)@\spxentry{cfd\_low}\spxextra{tes.base.Timing attribute}|hyperpage}{12}
+\indexentry{max\_slope (tes.base.Timing attribute)@\spxentry{max\_slope}\spxextra{tes.base.Timing attribute}|hyperpage}{12}
+\indexentry{pulse\_threshold (tes.base.Timing attribute)@\spxentry{pulse\_threshold}\spxextra{tes.base.Timing attribute}|hyperpage}{12}
+\indexentry{slope\_threshold (tes.base.Timing attribute)@\spxentry{slope\_threshold}\spxextra{tes.base.Timing attribute}|hyperpage}{12}
+\indexentry{TraceType (class in tes.base)@\spxentry{TraceType}\spxextra{class in tes.base}|hyperpage}{12}
+\indexentry{average (tes.base.TraceType attribute)@\spxentry{average}\spxextra{tes.base.TraceType attribute}|hyperpage}{12}
+\indexentry{dot\_product (tes.base.TraceType attribute)@\spxentry{dot\_product}\spxextra{tes.base.TraceType attribute}|hyperpage}{12}
+\indexentry{dot\_product\_trace (tes.base.TraceType attribute)@\spxentry{dot\_product\_trace}\spxextra{tes.base.TraceType attribute}|hyperpage}{12}
+\indexentry{single (tes.base.TraceType attribute)@\spxentry{single}\spxextra{tes.base.TraceType attribute}|hyperpage}{12}
+\indexentry{VhdlEnum (class in tes.base)@\spxentry{VhdlEnum}\spxextra{class in tes.base}|hyperpage}{12}
+\indexentry{latex() (tes.base.VhdlEnum method)@\spxentry{latex()}\spxextra{tes.base.VhdlEnum method}|hyperpage}{12}
+\indexentry{select() (tes.base.VhdlEnum method)@\spxentry{select()}\spxextra{tes.base.VhdlEnum method}|hyperpage}{12}
+\indexentry{lookup() (in module tes.base)@\spxentry{lookup()}\spxextra{in module tes.base}|hyperpage}{12}
+\indexentry{pulse\_fmt() (in module tes.base)@\spxentry{pulse\_fmt()}\spxextra{in module tes.base}|hyperpage}{12}
+\indexentry{rise2\_fmt() (in module tes.base)@\spxentry{rise2\_fmt()}\spxextra{in module tes.base}|hyperpage}{12}
+\indexentry{module@\spxentry{module}!tes.calibration@\spxentry{tes.calibration}|hyperpage}{13}
+\indexentry{tes.calibration@\spxentry{tes.calibration}!module@\spxentry{module}|hyperpage}{13}
+\indexentry{area\_histogram() (in module tes.calibration)@\spxentry{area\_histogram()}\spxextra{in module tes.calibration}|hyperpage}{13}
+\indexentry{find\_thresholds() (in module tes.calibration)@\spxentry{find\_thresholds()}\spxextra{in module tes.calibration}|hyperpage}{13}
+\indexentry{gaussian\_model() (in module tes.calibration)@\spxentry{gaussian\_model()}\spxextra{in module tes.calibration}|hyperpage}{14}
+\indexentry{guess\_histogram() (in module tes.calibration)@\spxentry{guess\_histogram()}\spxextra{in module tes.calibration}|hyperpage}{14}
+\indexentry{maxima() (in module tes.calibration)@\spxentry{maxima()}\spxextra{in module tes.calibration}|hyperpage}{14}
+\indexentry{plot\_area() (in module tes.calibration)@\spxentry{plot\_area()}\spxextra{in module tes.calibration}|hyperpage}{15}
+\indexentry{plot\_guess() (in module tes.calibration)@\spxentry{plot\_guess()}\spxextra{in module tes.calibration}|hyperpage}{15}
+\indexentry{plot\_histogram() (in module tes.calibration)@\spxentry{plot\_histogram()}\spxextra{in module tes.calibration}|hyperpage}{15}
+\indexentry{plot\_normalised() (in module tes.calibration)@\spxentry{plot\_normalised()}\spxextra{in module tes.calibration}|hyperpage}{16}
+\indexentry{residual\_gauss() (in module tes.calibration)@\spxentry{residual\_gauss()}\spxextra{in module tes.calibration}|hyperpage}{16}
+\indexentry{module@\spxentry{module}!tes.counts@\spxentry{tes.counts}|hyperpage}{16}
+\indexentry{tes.counts@\spxentry{tes.counts}!module@\spxentry{module}|hyperpage}{16}
+\indexentry{Counts (class in tes.counts)@\spxentry{Counts}\spxextra{class in tes.counts}|hyperpage}{16}
+\indexentry{count (tes.counts.Counts property)@\spxentry{count}\spxextra{tes.counts.Counts property}|hyperpage}{16}
+\indexentry{uncorrelated (tes.counts.Counts property)@\spxentry{uncorrelated}\spxextra{tes.counts.Counts property}|hyperpage}{16}
+\indexentry{vacuum (tes.counts.Counts property)@\spxentry{vacuum}\spxextra{tes.counts.Counts property}|hyperpage}{16}
+\indexentry{coincidence() (in module tes.counts)@\spxentry{coincidence()}\spxextra{in module tes.counts}|hyperpage}{17}
+\indexentry{counting\_photons() (in module tes.counts)@\spxentry{counting\_photons()}\spxextra{in module tes.counts}|hyperpage}{17}
+\indexentry{get\_thresholds() (in module tes.counts)@\spxentry{get\_thresholds()}\spxextra{in module tes.counts}|hyperpage}{18}
+\indexentry{window() (in module tes.counts)@\spxentry{window()}\spxextra{in module tes.counts}|hyperpage}{18}
+\indexentry{module@\spxentry{module}!tes.data@\spxentry{tes.data}|hyperpage}{18}
+\indexentry{tes.data@\spxentry{tes.data}!module@\spxentry{module}|hyperpage}{18}
+\indexentry{CaptureData (class in tes.data)@\spxentry{CaptureData}\spxextra{class in tes.data}|hyperpage}{18}
+\indexentry{homogeneous (tes.data.CaptureData property)@\spxentry{homogeneous}\spxextra{tes.data.CaptureData property}|hyperpage}{18}
+\indexentry{mask() (tes.data.CaptureData method)@\spxentry{mask()}\spxextra{tes.data.CaptureData method}|hyperpage}{18}
+\indexentry{CaptureResult (class in tes.data)@\spxentry{CaptureResult}\spxextra{class in tes.data}|hyperpage}{18}
+\indexentry{FpgaStats (class in tes.data)@\spxentry{FpgaStats}\spxextra{class in tes.data}|hyperpage}{18}
+\indexentry{av\_trace() (in module tes.data)@\spxentry{av\_trace()}\spxextra{in module tes.data}|hyperpage}{19}
+\indexentry{capture() (in module tes.data)@\spxentry{capture()}\spxextra{in module tes.data}|hyperpage}{19}
+\indexentry{fpga\_stats() (in module tes.data)@\spxentry{fpga\_stats()}\spxextra{in module tes.data}|hyperpage}{19}
+\indexentry{read\_mca() (in module tes.data)@\spxentry{read\_mca()}\spxextra{in module tes.data}|hyperpage}{19}
+\indexentry{module@\spxentry{module}!tes.data\_acquisition@\spxentry{tes.data\_acquisition}|hyperpage}{19}
+\indexentry{tes.data\_acquisition@\spxentry{tes.data\_acquisition}!module@\spxentry{module}|hyperpage}{19}
+\indexentry{pulse\_drive() (in module tes.data\_acquisition)@\spxentry{pulse\_drive()}\spxextra{in module tes.data\_acquisition}|hyperpage}{19}
+\indexentry{trace\_drive() (in module tes.data\_acquisition)@\spxentry{trace\_drive()}\spxextra{in module tes.data\_acquisition}|hyperpage}{20}
+\indexentry{module@\spxentry{module}!tes.folder\_management@\spxentry{tes.folder\_management}|hyperpage}{20}
+\indexentry{tes.folder\_management@\spxentry{tes.folder\_management}!module@\spxentry{module}|hyperpage}{20}
+\indexentry{find\_folders() (in module tes.folder\_management)@\spxentry{find\_folders()}\spxextra{in module tes.folder\_management}|hyperpage}{20}
+\indexentry{manage\_folders() (in module tes.folder\_management)@\spxentry{manage\_folders()}\spxextra{in module tes.folder\_management}|hyperpage}{20}
+\indexentry{module@\spxentry{module}!tes.maps@\spxentry{tes.maps}|hyperpage}{21}
+\indexentry{tes.maps@\spxentry{tes.maps}!module@\spxentry{module}|hyperpage}{21}
+\indexentry{RegInfo (class in tes.maps)@\spxentry{RegInfo}\spxextra{class in tes.maps}|hyperpage}{21}
+\indexentry{get() (tes.maps.RegInfo method)@\spxentry{get()}\spxextra{tes.maps.RegInfo method}|hyperpage}{21}
+\indexentry{set() (tes.maps.RegInfo method)@\spxentry{set()}\spxextra{tes.maps.RegInfo method}|hyperpage}{21}
+\indexentry{RegisterError@\spxentry{RegisterError}|hyperpage}{21}
+\indexentry{module@\spxentry{module}!tes.mca@\spxentry{tes.mca}|hyperpage}{22}
+\indexentry{tes.mca@\spxentry{tes.mca}!module@\spxentry{module}|hyperpage}{22}
+\indexentry{Distribution (class in tes.mca)@\spxentry{Distribution}\spxextra{class in tes.mca}|hyperpage}{22}
+\indexentry{bin\_width (tes.mca.Distribution property)@\spxentry{bin\_width}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{bins (tes.mca.Distribution property)@\spxentry{bins}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{channel (tes.mca.Distribution property)@\spxentry{channel}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{highest\_value (tes.mca.Distribution property)@\spxentry{highest\_value}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{last\_bin (tes.mca.Distribution property)@\spxentry{last\_bin}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{lowest\_value (tes.mca.Distribution property)@\spxentry{lowest\_value}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{most\_frequent (tes.mca.Distribution property)@\spxentry{most\_frequent}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{overflow (tes.mca.Distribution property)@\spxentry{overflow}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{qualifier (tes.mca.Distribution property)@\spxentry{qualifier}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{start\_time (tes.mca.Distribution property)@\spxentry{start\_time}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{stop\_time (tes.mca.Distribution property)@\spxentry{stop\_time}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{total (tes.mca.Distribution property)@\spxentry{total}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{trigger (tes.mca.Distribution property)@\spxentry{trigger}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{underflow (tes.mca.Distribution property)@\spxentry{underflow}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{value (tes.mca.Distribution property)@\spxentry{value}\spxextra{tes.mca.Distribution property}|hyperpage}{22}
+\indexentry{Qualifier (class in tes.mca)@\spxentry{Qualifier}\spxextra{class in tes.mca}|hyperpage}{22}
+\indexentry{above (tes.mca.Qualifier attribute)@\spxentry{above}\spxextra{tes.mca.Qualifier attribute}|hyperpage}{22}
+\indexentry{above\_area (tes.mca.Qualifier attribute)@\spxentry{above\_area}\spxextra{tes.mca.Qualifier attribute}|hyperpage}{22}
+\indexentry{all (tes.mca.Qualifier attribute)@\spxentry{all}\spxextra{tes.mca.Qualifier attribute}|hyperpage}{22}
+\indexentry{armed (tes.mca.Qualifier attribute)@\spxentry{armed}\spxextra{tes.mca.Qualifier attribute}|hyperpage}{22}
+\indexentry{disabled (tes.mca.Qualifier attribute)@\spxentry{disabled}\spxextra{tes.mca.Qualifier attribute}|hyperpage}{22}
+\indexentry{rise (tes.mca.Qualifier attribute)@\spxentry{rise}\spxextra{tes.mca.Qualifier attribute}|hyperpage}{22}
+\indexentry{valid\_peak1 (tes.mca.Qualifier attribute)@\spxentry{valid\_peak1}\spxextra{tes.mca.Qualifier attribute}|hyperpage}{22}
+\indexentry{valid\_peak2 (tes.mca.Qualifier attribute)@\spxentry{valid\_peak2}\spxextra{tes.mca.Qualifier attribute}|hyperpage}{23}
+\indexentry{valid\_peak3 (tes.mca.Qualifier attribute)@\spxentry{valid\_peak3}\spxextra{tes.mca.Qualifier attribute}|hyperpage}{23}
+\indexentry{valid\_rise (tes.mca.Qualifier attribute)@\spxentry{valid\_rise}\spxextra{tes.mca.Qualifier attribute}|hyperpage}{23}
+\indexentry{will\_arm (tes.mca.Qualifier attribute)@\spxentry{will\_arm}\spxextra{tes.mca.Qualifier attribute}|hyperpage}{23}
+\indexentry{will\_cross (tes.mca.Qualifier attribute)@\spxentry{will\_cross}\spxextra{tes.mca.Qualifier attribute}|hyperpage}{23}
+\indexentry{Trigger (class in tes.mca)@\spxentry{Trigger}\spxextra{class in tes.mca}|hyperpage}{23}
+\indexentry{cfd\_high (tes.mca.Trigger attribute)@\spxentry{cfd\_high}\spxextra{tes.mca.Trigger attribute}|hyperpage}{23}
+\indexentry{cfd\_low (tes.mca.Trigger attribute)@\spxentry{cfd\_low}\spxextra{tes.mca.Trigger attribute}|hyperpage}{23}
+\indexentry{clock (tes.mca.Trigger attribute)@\spxentry{clock}\spxextra{tes.mca.Trigger attribute}|hyperpage}{23}
+\indexentry{disabled (tes.mca.Trigger attribute)@\spxentry{disabled}\spxextra{tes.mca.Trigger attribute}|hyperpage}{23}
+\indexentry{f\_0xing (tes.mca.Trigger attribute)@\spxentry{f\_0xing}\spxextra{tes.mca.Trigger attribute}|hyperpage}{23}
+\indexentry{max\_slope (tes.mca.Trigger attribute)@\spxentry{max\_slope}\spxextra{tes.mca.Trigger attribute}|hyperpage}{23}
+\indexentry{pulse\_t\_neg (tes.mca.Trigger attribute)@\spxentry{pulse\_t\_neg}\spxextra{tes.mca.Trigger attribute}|hyperpage}{23}
+\indexentry{pulse\_t\_pos (tes.mca.Trigger attribute)@\spxentry{pulse\_t\_pos}\spxextra{tes.mca.Trigger attribute}|hyperpage}{23}
+\indexentry{s\_0xing (tes.mca.Trigger attribute)@\spxentry{s\_0xing}\spxextra{tes.mca.Trigger attribute}|hyperpage}{23}
+\indexentry{s\_0xing\_neg (tes.mca.Trigger attribute)@\spxentry{s\_0xing\_neg}\spxextra{tes.mca.Trigger attribute}|hyperpage}{23}
+\indexentry{s\_0xing\_pos (tes.mca.Trigger attribute)@\spxentry{s\_0xing\_pos}\spxextra{tes.mca.Trigger attribute}|hyperpage}{23}
+\indexentry{slope\_t\_pos (tes.mca.Trigger attribute)@\spxentry{slope\_t\_pos}\spxextra{tes.mca.Trigger attribute}|hyperpage}{23}
+\indexentry{Value (class in tes.mca)@\spxentry{Value}\spxextra{class in tes.mca}|hyperpage}{23}
+\indexentry{cfd\_high (tes.mca.Value attribute)@\spxentry{cfd\_high}\spxextra{tes.mca.Value attribute}|hyperpage}{23}
+\indexentry{disabled (tes.mca.Value attribute)@\spxentry{disabled}\spxextra{tes.mca.Value attribute}|hyperpage}{23}
+\indexentry{f (tes.mca.Value attribute)@\spxentry{f}\spxextra{tes.mca.Value attribute}|hyperpage}{23}
+\indexentry{f\_area (tes.mca.Value attribute)@\spxentry{f\_area}\spxextra{tes.mca.Value attribute}|hyperpage}{23}
+\indexentry{f\_extrema (tes.mca.Value attribute)@\spxentry{f\_extrema}\spxextra{tes.mca.Value attribute}|hyperpage}{23}
+\indexentry{pulse\_area (tes.mca.Value attribute)@\spxentry{pulse\_area}\spxextra{tes.mca.Value attribute}|hyperpage}{23}
+\indexentry{pulse\_timer (tes.mca.Value attribute)@\spxentry{pulse\_timer}\spxextra{tes.mca.Value attribute}|hyperpage}{23}
+\indexentry{raw (tes.mca.Value attribute)@\spxentry{raw}\spxextra{tes.mca.Value attribute}|hyperpage}{23}
+\indexentry{rise\_timer (tes.mca.Value attribute)@\spxentry{rise\_timer}\spxextra{tes.mca.Value attribute}|hyperpage}{23}
+\indexentry{s (tes.mca.Value attribute)@\spxentry{s}\spxextra{tes.mca.Value attribute}|hyperpage}{23}
+\indexentry{s\_area (tes.mca.Value attribute)@\spxentry{s\_area}\spxextra{tes.mca.Value attribute}|hyperpage}{23}
+\indexentry{s\_extrema (tes.mca.Value attribute)@\spxentry{s\_extrema}\spxextra{tes.mca.Value attribute}|hyperpage}{23}
+\indexentry{module@\spxentry{module}!tes.mca\_control@\spxentry{tes.mca\_control}|hyperpage}{24}
+\indexentry{tes.mca\_control@\spxentry{tes.mca\_control}!module@\spxentry{module}|hyperpage}{24}
+\indexentry{area\_histogram() (in module tes.mca\_control)@\spxentry{area\_histogram()}\spxextra{in module tes.mca\_control}|hyperpage}{24}
+\indexentry{baseline\_offset() (in module tes.mca\_control)@\spxentry{baseline\_offset()}\spxextra{in module tes.mca\_control}|hyperpage}{24}
+\indexentry{configure\_channels() (in module tes.mca\_control)@\spxentry{configure\_channels()}\spxextra{in module tes.mca\_control}|hyperpage}{24}
+\indexentry{pulse\_threshold() (in module tes.mca\_control)@\spxentry{pulse\_threshold()}\spxextra{in module tes.mca\_control}|hyperpage}{25}
+\indexentry{slope\_threshold() (in module tes.mca\_control)@\spxentry{slope\_threshold()}\spxextra{in module tes.mca\_control}|hyperpage}{25}
+\indexentry{module@\spxentry{module}!tes.protocol@\spxentry{tes.protocol}|hyperpage}{26}
+\indexentry{tes.protocol@\spxentry{tes.protocol}!module@\spxentry{module}|hyperpage}{26}
+\indexentry{PayloadType (class in tes.protocol)@\spxentry{PayloadType}\spxextra{class in tes.protocol}|hyperpage}{26}
+\indexentry{area (tes.protocol.PayloadType attribute)@\spxentry{area}\spxextra{tes.protocol.PayloadType attribute}|hyperpage}{26}
+\indexentry{mca (tes.protocol.PayloadType attribute)@\spxentry{mca}\spxextra{tes.protocol.PayloadType attribute}|hyperpage}{26}
+\indexentry{peak (tes.protocol.PayloadType attribute)@\spxentry{peak}\spxextra{tes.protocol.PayloadType attribute}|hyperpage}{26}
+\indexentry{pulse (tes.protocol.PayloadType attribute)@\spxentry{pulse}\spxextra{tes.protocol.PayloadType attribute}|hyperpage}{26}
+\indexentry{tick (tes.protocol.PayloadType attribute)@\spxentry{tick}\spxextra{tes.protocol.PayloadType attribute}|hyperpage}{26}
+\indexentry{trace (tes.protocol.PayloadType attribute)@\spxentry{trace}\spxextra{tes.protocol.PayloadType attribute}|hyperpage}{26}
+\indexentry{module@\spxentry{module}!tes.registers@\spxentry{tes.registers}|hyperpage}{26}
+\indexentry{tes.registers@\spxentry{tes.registers}!module@\spxentry{module}|hyperpage}{26}
+\indexentry{Registers (class in tes.registers)@\spxentry{Registers}\spxextra{class in tes.registers}|hyperpage}{26}
+\indexentry{adc (tes.registers.Registers attribute)@\spxentry{adc}\spxextra{tes.registers.Registers attribute}|hyperpage}{27}
+\indexentry{baseline (tes.registers.Registers attribute)@\spxentry{baseline}\spxextra{tes.registers.Registers attribute}|hyperpage}{27}
+\indexentry{cfd (tes.registers.Registers attribute)@\spxentry{cfd}\spxextra{tes.registers.Registers attribute}|hyperpage}{27}
+\indexentry{channel (tes.registers.Registers attribute)@\spxentry{channel}\spxextra{tes.registers.Registers attribute}|hyperpage}{27}
+\indexentry{event (tes.registers.Registers attribute)@\spxentry{event}\spxextra{tes.registers.Registers attribute}|hyperpage}{27}
+\indexentry{mca (tes.registers.Registers attribute)@\spxentry{mca}\spxextra{tes.registers.Registers attribute}|hyperpage}{27}
+\indexentry{load() (in module tes.registers)@\spxentry{load()}\spxextra{in module tes.registers}|hyperpage}{27}
+\indexentry{save() (in module tes.registers)@\spxentry{save()}\spxextra{in module tes.registers}|hyperpage}{27}
+\indexentry{module@\spxentry{module}!tes.traces@\spxentry{tes.traces}|hyperpage}{27}
+\indexentry{tes.traces@\spxentry{tes.traces}!module@\spxentry{module}|hyperpage}{27}
+\indexentry{correct\_xticks() (in module tes.traces)@\spxentry{correct\_xticks()}\spxextra{in module tes.traces}|hyperpage}{27}
+\indexentry{correct\_yticks() (in module tes.traces)@\spxentry{correct\_yticks()}\spxextra{in module tes.traces}|hyperpage}{27}
+\indexentry{create\_statistics\_file() (in module tes.traces)@\spxentry{create\_statistics\_file()}\spxextra{in module tes.traces}|hyperpage}{28}
+\indexentry{extract\_data() (in module tes.traces)@\spxentry{extract\_data()}\spxextra{in module tes.traces}|hyperpage}{28}
+\indexentry{plot\_traces() (in module tes.traces)@\spxentry{plot\_traces()}\spxextra{in module tes.traces}|hyperpage}{28}
+\indexentry{module@\spxentry{module}!tes@\spxentry{tes}|hyperpage}{29}
+\indexentry{tes@\spxentry{tes}!module@\spxentry{module}|hyperpage}{29}

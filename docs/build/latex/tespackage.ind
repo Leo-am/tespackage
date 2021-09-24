@@ -1,0 +1,317 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter A
+  \item \spxentry{above}\spxextra{tes.mca.Qualifier attribute}, \hyperpage{22}
+  \item \spxentry{above\_area}\spxextra{tes.mca.Qualifier attribute}, \hyperpage{22}
+  \item \spxentry{adc}\spxextra{tes.registers.Registers attribute}, \hyperpage{27}
+  \item \spxentry{all}\spxextra{tes.mca.Qualifier attribute}, \hyperpage{22}
+  \item \spxentry{area}\spxextra{tes.base.Detection attribute}, \hyperpage{11}
+  \item \spxentry{area}\spxextra{tes.base.Payload attribute}, \hyperpage{11}
+  \item \spxentry{area}\spxextra{tes.protocol.PayloadType attribute}, \hyperpage{26}
+  \item \spxentry{area\_histogram()}\spxextra{in module tes.calibration}, \hyperpage{13}
+  \item \spxentry{area\_histogram()}\spxextra{in module tes.mca\_control}, \hyperpage{24}
+  \item \spxentry{armed}\spxextra{tes.mca.Qualifier attribute}, \hyperpage{22}
+  \item \spxentry{av\_trace()}\spxextra{in module tes.data}, \hyperpage{19}
+  \item \spxentry{average}\spxextra{tes.base.TraceType attribute}, \hyperpage{12}
+  \item \spxentry{average\_trace}\spxextra{tes.base.Payload attribute}, \hyperpage{11}
+
+  \indexspace
+  \bigletter B
+  \item \spxentry{bad\_frame}\spxextra{tes.base.Payload attribute}, \hyperpage{11}
+  \item \spxentry{baseline}\spxextra{tes.registers.Registers attribute}, \hyperpage{27}
+  \item \spxentry{baseline\_offset()}\spxextra{in module tes.mca\_control}, \hyperpage{24}
+  \item \spxentry{bin\_c}\spxextra{tes.analysis.Guess property}, \hyperpage{4}
+  \item \spxentry{bin\_width}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+  \item \spxentry{bins}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+
+  \indexspace
+  \bigletter C
+  \item \spxentry{capture()}\spxextra{in module tes.data}, \hyperpage{19}
+  \item \spxentry{CaptureData}\spxextra{class in tes.data}, \hyperpage{18}
+  \item \spxentry{CaptureResult}\spxextra{class in tes.data}, \hyperpage{18}
+  \item \spxentry{cdf()}\spxextra{tes.analysis.MixtureModel method}, \hyperpage{5}
+  \item \spxentry{cfd}\spxextra{tes.registers.Registers attribute}, \hyperpage{27}
+  \item \spxentry{cfd\_height}\spxextra{tes.base.Height attribute}, \hyperpage{11}
+  \item \spxentry{cfd\_high}\spxextra{tes.base.Height attribute}, \hyperpage{11}
+  \item \spxentry{cfd\_high}\spxextra{tes.mca.Trigger attribute}, \hyperpage{23}
+  \item \spxentry{cfd\_high}\spxextra{tes.mca.Value attribute}, \hyperpage{23}
+  \item \spxentry{cfd\_low}\spxextra{tes.base.Timing attribute}, \hyperpage{12}
+  \item \spxentry{cfd\_low}\spxextra{tes.mca.Trigger attribute}, \hyperpage{23}
+  \item \spxentry{channel}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+  \item \spxentry{channel}\spxextra{tes.registers.Registers attribute}, \hyperpage{27}
+  \item \spxentry{clock}\spxextra{tes.mca.Trigger attribute}, \hyperpage{23}
+  \item \spxentry{coherent\_ml()}\spxextra{in module tes.analysis}, \hyperpage{5}
+  \item \spxentry{coherent\_neg\_ll()}\spxextra{in module tes.analysis}, \hyperpage{5}
+  \item \spxentry{coincidence()}\spxextra{in module tes.analysis}, \hyperpage{5}
+  \item \spxentry{coincidence()}\spxextra{in module tes.counts}, \hyperpage{17}
+  \item \spxentry{configure\_channels()}\spxextra{in module tes.mca\_control}, \hyperpage{24}
+  \item \spxentry{correct\_xticks()}\spxextra{in module tes.traces}, \hyperpage{27}
+  \item \spxentry{correct\_yticks()}\spxextra{in module tes.traces}, \hyperpage{27}
+  \item \spxentry{count}\spxextra{tes.analysis.Counts property}, \hyperpage{4}
+  \item \spxentry{count}\spxextra{tes.counts.Counts property}, \hyperpage{16}
+  \item \spxentry{count()}\spxextra{in module tes.analysis}, \hyperpage{6}
+  \item \spxentry{counting\_photons()}\spxextra{in module tes.counts}, \hyperpage{17}
+  \item \spxentry{Counts}\spxextra{class in tes.analysis}, \hyperpage{4}
+  \item \spxentry{Counts}\spxextra{class in tes.counts}, \hyperpage{16}
+  \item \spxentry{create\_statistics\_file()}\spxextra{in module tes.traces}, \hyperpage{28}
+
+  \indexspace
+  \bigletter D
+  \item \spxentry{Detection}\spxextra{class in tes.base}, \hyperpage{11}
+  \item \spxentry{disabled}\spxextra{tes.mca.Qualifier attribute}, \hyperpage{22}
+  \item \spxentry{disabled}\spxextra{tes.mca.Trigger attribute}, \hyperpage{23}
+  \item \spxentry{disabled}\spxextra{tes.mca.Value attribute}, \hyperpage{23}
+  \item \spxentry{displaced\_thermal()}\spxextra{in module tes.analysis}, \hyperpage{6}
+  \item \spxentry{displaced\_vacuum()}\spxextra{in module tes.analysis}, \hyperpage{6}
+  \item \spxentry{Distribution}\spxextra{class in tes.mca}, \hyperpage{22}
+  \item \spxentry{dot\_product}\spxextra{tes.base.Payload attribute}, \hyperpage{11}
+  \item \spxentry{dot\_product}\spxextra{tes.base.TraceType attribute}, \hyperpage{12}
+  \item \spxentry{dot\_product\_trace}\spxextra{tes.base.Payload attribute}, \hyperpage{11}
+  \item \spxentry{dot\_product\_trace}\spxextra{tes.base.TraceType attribute}, \hyperpage{12}
+  \item \spxentry{drive\_correlation()}\spxextra{in module tes.analysis}, \hyperpage{6}
+
+  \indexspace
+  \bigletter E
+  \item \spxentry{event}\spxextra{tes.registers.Registers attribute}, \hyperpage{27}
+  \item \spxentry{expectation\_maximisation()}\spxextra{in module tes.analysis}, \hyperpage{6}
+  \item \spxentry{extract\_data()}\spxextra{in module tes.traces}, \hyperpage{28}
+
+  \indexspace
+  \bigletter F
+  \item \spxentry{f}\spxextra{tes.analysis.Guess property}, \hyperpage{4}
+  \item \spxentry{f}\spxextra{tes.base.Signal attribute}, \hyperpage{12}
+  \item \spxentry{f}\spxextra{tes.mca.Value attribute}, \hyperpage{23}
+  \item \spxentry{f\_0xing}\spxextra{tes.mca.Trigger attribute}, \hyperpage{23}
+  \item \spxentry{f\_area}\spxextra{tes.mca.Value attribute}, \hyperpage{23}
+  \item \spxentry{f\_extrema}\spxextra{tes.mca.Value attribute}, \hyperpage{23}
+  \item \spxentry{find\_folders()}\spxextra{in module tes.folder\_management}, \hyperpage{20}
+  \item \spxentry{find\_thresholds()}\spxextra{in module tes.calibration}, \hyperpage{13}
+  \item \spxentry{fit\_state\_least\_squares()}\spxextra{in module tes.analysis}, \hyperpage{7}
+  \item \spxentry{fpga\_stats()}\spxextra{in module tes.data}, \hyperpage{19}
+  \item \spxentry{FpgaStats}\spxextra{class in tes.data}, \hyperpage{18}
+
+  \indexspace
+  \bigletter G
+  \item \spxentry{gaussian\_model()}\spxextra{in module tes.calibration}, \hyperpage{14}
+  \item \spxentry{get()}\spxextra{tes.maps.RegInfo method}, \hyperpage{21}
+  \item \spxentry{get\_thresholds()}\spxextra{in module tes.counts}, \hyperpage{18}
+  \item \spxentry{Guess}\spxextra{class in tes.analysis}, \hyperpage{4}
+  \item \spxentry{guess\_histogram()}\spxextra{in module tes.calibration}, \hyperpage{14}
+  \item \spxentry{guess\_thresholds()}\spxextra{in module tes.analysis}, \hyperpage{7}
+
+  \indexspace
+  \bigletter H
+  \item \spxentry{hard\_expectation()}\spxextra{in module tes.analysis}, \hyperpage{7}
+  \item \spxentry{hard\_maximisation()}\spxextra{in module tes.analysis}, \hyperpage{8}
+  \item \spxentry{has\_noise\_threshold}\spxextra{tes.analysis.Counts property}, \hyperpage{4}
+  \item \spxentry{Height}\spxextra{class in tes.base}, \hyperpage{11}
+  \item \spxentry{highest\_value}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+  \item \spxentry{hist}\spxextra{tes.analysis.Guess property}, \hyperpage{4}
+  \item \spxentry{homogeneous}\spxextra{tes.data.CaptureData property}, \hyperpage{18}
+
+  \indexspace
+  \bigletter L
+  \item \spxentry{last\_bin}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+  \item \spxentry{latex()}\spxextra{tes.base.VhdlEnum method}, \hyperpage{12}
+  \item \spxentry{load()}\spxextra{in module tes.registers}, \hyperpage{27}
+  \item \spxentry{load()}\spxextra{tes.analysis.MixtureModel static method}, \hyperpage{5}
+  \item \spxentry{lookup()}\spxextra{in module tes.base}, \hyperpage{12}
+  \item \spxentry{lowest\_value}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{manage\_folders()}\spxextra{in module tes.folder\_management}, \hyperpage{20}
+  \item \spxentry{mask()}\spxextra{tes.data.CaptureData method}, \hyperpage{18}
+  \item \spxentry{max\_i}\spxextra{tes.analysis.Guess property}, \hyperpage{4}
+  \item \spxentry{max\_slope}\spxextra{tes.base.Height attribute}, \hyperpage{11}
+  \item \spxentry{max\_slope}\spxextra{tes.base.Timing attribute}, \hyperpage{12}
+  \item \spxentry{max\_slope}\spxextra{tes.mca.Trigger attribute}, \hyperpage{23}
+  \item \spxentry{maxima()}\spxextra{in module tes.analysis}, \hyperpage{8}
+  \item \spxentry{maxima()}\spxextra{in module tes.calibration}, \hyperpage{14}
+  \item \spxentry{mca}\spxextra{tes.base.Payload attribute}, \hyperpage{11}
+  \item \spxentry{mca}\spxextra{tes.protocol.PayloadType attribute}, \hyperpage{26}
+  \item \spxentry{mca}\spxextra{tes.registers.Registers attribute}, \hyperpage{27}
+  \item \spxentry{mixture\_model\_ll()}\spxextra{in module tes.analysis}, \hyperpage{8}
+  \item \spxentry{MixtureModel}\spxextra{class in tes.analysis}, \hyperpage{4}
+  \item \spxentry{module}
+    \subitem \spxentry{tes}, \hyperpage{29}
+    \subitem \spxentry{tes.analysis}, \hyperpage{4}
+    \subitem \spxentry{tes.base}, \hyperpage{11}
+    \subitem \spxentry{tes.calibration}, \hyperpage{13}
+    \subitem \spxentry{tes.counts}, \hyperpage{16}
+    \subitem \spxentry{tes.data}, \hyperpage{18}
+    \subitem \spxentry{tes.data\_acquisition}, \hyperpage{19}
+    \subitem \spxentry{tes.folder\_management}, \hyperpage{20}
+    \subitem \spxentry{tes.maps}, \hyperpage{21}
+    \subitem \spxentry{tes.mca}, \hyperpage{22}
+    \subitem \spxentry{tes.mca\_control}, \hyperpage{24}
+    \subitem \spxentry{tes.protocol}, \hyperpage{26}
+    \subitem \spxentry{tes.registers}, \hyperpage{26}
+    \subitem \spxentry{tes.traces}, \hyperpage{27}
+  \item \spxentry{most\_frequent}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+
+  \indexspace
+  \bigletter N
+  \item \spxentry{none}\spxextra{tes.base.Signal attribute}, \hyperpage{12}
+  \item \spxentry{normalised\_pdf()}\spxextra{in module tes.analysis}, \hyperpage{8}
+
+  \indexspace
+  \bigletter O
+  \item \spxentry{outcome\_probabilities()}\spxextra{in module tes.analysis}, \hyperpage{8}
+  \item \spxentry{overflow}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{partition()}\spxextra{in module tes.analysis}, \hyperpage{8}
+  \item \spxentry{Payload}\spxextra{class in tes.base}, \hyperpage{11}
+  \item \spxentry{PayloadType}\spxextra{class in tes.protocol}, \hyperpage{26}
+  \item \spxentry{pdf()}\spxextra{tes.analysis.MixtureModel method}, \hyperpage{5}
+  \item \spxentry{peak}\spxextra{tes.base.Height attribute}, \hyperpage{11}
+  \item \spxentry{peak}\spxextra{tes.protocol.PayloadType attribute}, \hyperpage{26}
+  \item \spxentry{plot\_area()}\spxextra{in module tes.calibration}, \hyperpage{15}
+  \item \spxentry{plot\_guess()}\spxextra{in module tes.analysis}, \hyperpage{9}
+  \item \spxentry{plot\_guess()}\spxextra{in module tes.calibration}, \hyperpage{15}
+  \item \spxentry{plot\_histogram()}\spxextra{in module tes.calibration}, \hyperpage{15}
+  \item \spxentry{plot\_mixture\_model()}\spxextra{in module tes.analysis}, \hyperpage{9}
+  \item \spxentry{plot\_normalised()}\spxextra{in module tes.calibration}, \hyperpage{16}
+  \item \spxentry{plot\_state\_fit()}\spxextra{in module tes.analysis}, \hyperpage{9}
+  \item \spxentry{plot\_traces()}\spxextra{in module tes.traces}, \hyperpage{28}
+  \item \spxentry{Povm}\spxextra{in module tes.analysis}, \hyperpage{5}
+  \item \spxentry{povm\_elements()}\spxextra{in module tes.analysis}, \hyperpage{9}
+  \item \spxentry{pulse}\spxextra{tes.base.Detection attribute}, \hyperpage{11}
+  \item \spxentry{pulse}\spxextra{tes.base.Payload attribute}, \hyperpage{11}
+  \item \spxentry{pulse}\spxextra{tes.protocol.PayloadType attribute}, \hyperpage{26}
+  \item \spxentry{pulse\_area}\spxextra{tes.mca.Value attribute}, \hyperpage{23}
+  \item \spxentry{pulse\_drive()}\spxextra{in module tes.data\_acquisition}, \hyperpage{19}
+  \item \spxentry{pulse\_fmt()}\spxextra{in module tes.base}, \hyperpage{12}
+  \item \spxentry{pulse\_t\_neg}\spxextra{tes.mca.Trigger attribute}, \hyperpage{23}
+  \item \spxentry{pulse\_t\_pos}\spxextra{tes.mca.Trigger attribute}, \hyperpage{23}
+  \item \spxentry{pulse\_threshold}\spxextra{tes.base.Timing attribute}, \hyperpage{12}
+  \item \spxentry{pulse\_threshold()}\spxextra{in module tes.mca\_control}, \hyperpage{25}
+  \item \spxentry{pulse\_timer}\spxextra{tes.mca.Value attribute}, \hyperpage{23}
+
+  \indexspace
+  \bigletter Q
+  \item \spxentry{Qualifier}\spxextra{class in tes.mca}, \hyperpage{22}
+  \item \spxentry{qualifier}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+
+  \indexspace
+  \bigletter R
+  \item \spxentry{raw}\spxextra{tes.base.Signal attribute}, \hyperpage{12}
+  \item \spxentry{raw}\spxextra{tes.mca.Value attribute}, \hyperpage{23}
+  \item \spxentry{read\_mca()}\spxextra{in module tes.data}, \hyperpage{19}
+  \item \spxentry{RegInfo}\spxextra{class in tes.maps}, \hyperpage{21}
+  \item \spxentry{RegisterError}, \hyperpage{21}
+  \item \spxentry{Registers}\spxextra{class in tes.registers}, \hyperpage{26}
+  \item \spxentry{residual\_gauss()}\spxextra{in module tes.calibration}, \hyperpage{16}
+  \item \spxentry{resize\_vector()}\spxextra{in module tes.analysis}, \hyperpage{9}
+  \item \spxentry{retime()}\spxextra{in module tes.analysis}, \hyperpage{9}
+  \item \spxentry{rise}\spxextra{tes.base.Detection attribute}, \hyperpage{11}
+  \item \spxentry{rise}\spxextra{tes.base.Payload attribute}, \hyperpage{11}
+  \item \spxentry{rise}\spxextra{tes.mca.Qualifier attribute}, \hyperpage{22}
+  \item \spxentry{rise2\_fmt()}\spxextra{in module tes.base}, \hyperpage{12}
+  \item \spxentry{rise\_timer}\spxextra{tes.mca.Value attribute}, \hyperpage{23}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{s}\spxextra{tes.base.Signal attribute}, \hyperpage{12}
+  \item \spxentry{s}\spxextra{tes.mca.Value attribute}, \hyperpage{23}
+  \item \spxentry{s\_0xing}\spxextra{tes.mca.Trigger attribute}, \hyperpage{23}
+  \item \spxentry{s\_0xing\_neg}\spxextra{tes.mca.Trigger attribute}, \hyperpage{23}
+  \item \spxentry{s\_0xing\_pos}\spxextra{tes.mca.Trigger attribute}, \hyperpage{23}
+  \item \spxentry{s\_area}\spxextra{tes.mca.Value attribute}, \hyperpage{23}
+  \item \spxentry{s\_extrema}\spxextra{tes.mca.Value attribute}, \hyperpage{23}
+  \item \spxentry{save()}\spxextra{in module tes.registers}, \hyperpage{27}
+  \item \spxentry{save()}\spxextra{tes.analysis.MixtureModel method}, \hyperpage{5}
+  \item \spxentry{scaled\_pdf()}\spxextra{in module tes.analysis}, \hyperpage{9}
+  \item \spxentry{select()}\spxextra{tes.base.VhdlEnum method}, \hyperpage{12}
+  \item \spxentry{set()}\spxextra{tes.maps.RegInfo method}, \hyperpage{21}
+  \item \spxentry{Signal}\spxextra{class in tes.base}, \hyperpage{12}
+  \item \spxentry{single}\spxextra{tes.base.TraceType attribute}, \hyperpage{12}
+  \item \spxentry{single\_trace}\spxextra{tes.base.Payload attribute}, \hyperpage{11}
+  \item \spxentry{slope\_t\_pos}\spxextra{tes.mca.Trigger attribute}, \hyperpage{23}
+  \item \spxentry{slope\_threshold}\spxextra{tes.base.Timing attribute}, \hyperpage{12}
+  \item \spxentry{slope\_threshold()}\spxextra{in module tes.mca\_control}, \hyperpage{25}
+  \item \spxentry{start\_time}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+  \item \spxentry{stop\_time}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+
+  \indexspace
+  \bigletter T
+  \item \spxentry{tes}
+    \subitem \spxentry{module}, \hyperpage{29}
+  \item \spxentry{tes.analysis}
+    \subitem \spxentry{module}, \hyperpage{4}
+  \item \spxentry{tes.base}
+    \subitem \spxentry{module}, \hyperpage{11}
+  \item \spxentry{tes.calibration}
+    \subitem \spxentry{module}, \hyperpage{13}
+  \item \spxentry{tes.counts}
+    \subitem \spxentry{module}, \hyperpage{16}
+  \item \spxentry{tes.data}
+    \subitem \spxentry{module}, \hyperpage{18}
+  \item \spxentry{tes.data\_acquisition}
+    \subitem \spxentry{module}, \hyperpage{19}
+  \item \spxentry{tes.folder\_management}
+    \subitem \spxentry{module}, \hyperpage{20}
+  \item \spxentry{tes.maps}
+    \subitem \spxentry{module}, \hyperpage{21}
+  \item \spxentry{tes.mca}
+    \subitem \spxentry{module}, \hyperpage{22}
+  \item \spxentry{tes.mca\_control}
+    \subitem \spxentry{module}, \hyperpage{24}
+  \item \spxentry{tes.protocol}
+    \subitem \spxentry{module}, \hyperpage{26}
+  \item \spxentry{tes.registers}
+    \subitem \spxentry{module}, \hyperpage{26}
+  \item \spxentry{tes.traces}
+    \subitem \spxentry{module}, \hyperpage{27}
+  \item \spxentry{thermal\_ml()}\spxextra{in module tes.analysis}, \hyperpage{10}
+  \item \spxentry{thermal\_neg\_ll()}\spxextra{in module tes.analysis}, \hyperpage{10}
+  \item \spxentry{threshold\_masks()}\spxextra{in module tes.analysis}, \hyperpage{10}
+  \item \spxentry{thresholds}\spxextra{tes.analysis.Guess property}, \hyperpage{4}
+  \item \spxentry{tick}\spxextra{tes.base.Payload attribute}, \hyperpage{11}
+  \item \spxentry{tick}\spxextra{tes.protocol.PayloadType attribute}, \hyperpage{26}
+  \item \spxentry{Timing}\spxextra{class in tes.base}, \hyperpage{12}
+  \item \spxentry{total}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+  \item \spxentry{trace}\spxextra{tes.base.Detection attribute}, \hyperpage{11}
+  \item \spxentry{trace}\spxextra{tes.protocol.PayloadType attribute}, \hyperpage{26}
+  \item \spxentry{trace\_drive()}\spxextra{in module tes.data\_acquisition}, \hyperpage{20}
+  \item \spxentry{TraceType}\spxextra{class in tes.base}, \hyperpage{12}
+  \item \spxentry{Trigger}\spxextra{class in tes.mca}, \hyperpage{23}
+  \item \spxentry{trigger}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+
+  \indexspace
+  \bigletter U
+  \item \spxentry{uncorrelated}\spxextra{tes.analysis.Counts property}, \hyperpage{4}
+  \item \spxentry{uncorrelated}\spxextra{tes.counts.Counts property}, \hyperpage{16}
+  \item \spxentry{underflow}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+
+  \indexspace
+  \bigletter V
+  \item \spxentry{vacuum}\spxextra{tes.analysis.Counts property}, \hyperpage{4}
+  \item \spxentry{vacuum}\spxextra{tes.counts.Counts property}, \hyperpage{16}
+  \item \spxentry{valid\_peak1}\spxextra{tes.mca.Qualifier attribute}, \hyperpage{22}
+  \item \spxentry{valid\_peak2}\spxextra{tes.mca.Qualifier attribute}, \hyperpage{23}
+  \item \spxentry{valid\_peak3}\spxextra{tes.mca.Qualifier attribute}, \hyperpage{23}
+  \item \spxentry{valid\_rise}\spxextra{tes.mca.Qualifier attribute}, \hyperpage{23}
+  \item \spxentry{Value}\spxextra{class in tes.mca}, \hyperpage{23}
+  \item \spxentry{value}\spxextra{tes.mca.Distribution property}, \hyperpage{22}
+  \item \spxentry{VhdlEnum}\spxextra{class in tes.base}, \hyperpage{12}
+
+  \indexspace
+  \bigletter W
+  \item \spxentry{will\_arm}\spxextra{tes.mca.Qualifier attribute}, \hyperpage{23}
+  \item \spxentry{will\_cross}\spxextra{tes.mca.Qualifier attribute}, \hyperpage{23}
+  \item \spxentry{window()}\spxextra{in module tes.analysis}, \hyperpage{10}
+  \item \spxentry{window()}\spxextra{in module tes.counts}, \hyperpage{18}
+
+  \indexspace
+  \bigletter X
+  \item \spxentry{x\_correlation()}\spxextra{in module tes.analysis}, \hyperpage{10}
+  \item \spxentry{xcor()}\spxextra{in module tes.analysis}, \hyperpage{10}
+
+\end{sphinxtheindex}
