@@ -1,0 +1,9 @@
+site_name: My Docs
+
+site_name: your site name
+site_url: https://GITHUB_USERNAME.github.io
+site_author: you
+site_description: a short description of your website
+
+nav:
+  - About: index.md
