@@ -2,10 +2,12 @@ Usage
 =====
 
 After downloading the files in this package to your computer, use the Jupyter notebooks on the folder 'Jupyter Notebooks' to use the package for: 
-- Configure the multi-channel analyser (MCA);
-- Configure the measurements made by the hardware processor on the TES pulses;
-- Calibrate the TES detectors;
-- Transform area measurements in photon number information.
+
+* Configure the multi-channel analyser (MCA) (_MCA_and_Measurements.ipynb_);
+* Configure the measurements made by the hardware processor on the TES pulses (_MCA_and_Measurements.ipynb_);
+* Calibrate the TES detectors (_TES Calibration.ipynb);
+* Transform area measurements in photon number information (_TES Counting Photons.ipynb_);
+* Plot TES traces obtained with the hardware processor (_TES Trace Generator.ipynb_)
 
 To use the package in your own programs/notebooks, import it using 
 
