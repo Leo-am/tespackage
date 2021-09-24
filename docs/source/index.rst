@@ -1,24 +1,39 @@
-Welcome to Lumache's documentation!
-===================================
+# tespackage
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+Python package responsible to establish communication and control the setting of the hardware processor for the transition-edge sensors at the Quantum Technology Lab (QTLab), University of Queensland.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project .
+# Usage
 
-.. note::
+After downloading the files in this package to your computer, use the Jupyter notebooks on the folder 'Jupyter Notebooks' to use the package for: 
+- Configure the multi-channel analyser (MCA);
+- Configure the measurements made by the hardware processor on the TES pulses;
+- Calibrate the TES detectors;
+- Transform area measurements in photon number information.
 
-   This project is under active development.
+To use the package in your own programs/notebooks, import it using 
 
-Contents
---------
+<code> import tes </code>
 
-.. toctree::
+# Installation
 
-   usage
-   api
-   
-Lumache has its documentation hosted on Read the Docs.
+We recommend that you create a virtual enviroment using conda to work and develop this package.
+
+After downloading the contents of this repository to your machine, you can install the package using the terminal. 
+
+First open the folder where you installed the contents of this repository. 
+
+Then, install the package using:
+
+<code> python setup.py install </code>
+
+# Requirements
+
+The tes package requires: 
+
+- numpy
+- scipy
+- matplotlib
+- numba
+- yaml
+- pyserial
+
