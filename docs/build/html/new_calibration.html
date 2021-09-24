@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>new_calibration module &#8212; tespackage 0.2.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="protocol module" href="protocol.html" />
+    <link rel="prev" title="mca module" href="mca.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="protocol.html" title="protocol module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mca.html" title="mca module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">tespackage 0.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">fordocs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">new_calibration module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-new_calibration">
+<span id="new-calibration-module"></span><h1>new_calibration module<a class="headerlink" href="#module-new_calibration" title="Permalink to this headline">¶</a></h1>
+<p>Function to be added to tes package as calibration.py.</p>
+<p>Created on Thu Jun 17 16:52:22 2021</p>
+<p>&#64;author: Leonardo Assis Morais</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="new_calibration.correct_xticks">
+<span class="sig-prename descclassname"><span class="pre">new_calibration.</span></span><span class="sig-name descname"><span class="pre">correct_xticks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#new_calibration.correct_xticks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Properly edit the xticks for a matplotlib plot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ax</strong> (<em>axis object</em>) – Axis with x-axis to be edited.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>expx</strong> – Integer to be added to the x-axis label.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="new_calibration.correct_yticks">
+<span class="sig-prename descclassname"><span class="pre">new_calibration.</span></span><span class="sig-name descname"><span class="pre">correct_yticks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#new_calibration.correct_yticks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Properly edit the yticks for a matplotlib plot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ax</strong> (<em>axis object</em>) – Axis with x-axis to be edited.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>expy</strong> – Integer to be added to the x-axis label.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="new_calibration.guess_histogram">
+<span class="sig-prename descclassname"><span class="pre">new_calibration.</span></span><span class="sig-name descname"><span class="pre">guess_histogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">areas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_area</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#new_calibration.guess_histogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>First guess for histogram fitting.</p>
+<p>Using a Hann function to create an approximate fit for the
+data, estimates the position for the centre of the different
+peaks in the area histogram.</p>
+<p>WARNING:
+The Hann window fitting must be checked manually to see if
+it is reasonable using the function plot_guess.</p>
+<blockquote>
+<div><p>maxima</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bin_number</strong> (<em>int</em>) – Number of bins used in histogram.</p></li>
+<li><p><strong>win_length</strong> (<em>int</em>) – Length of the Hann window used in the fit.</p></li>
+<li><p><strong>minimum</strong> (<em>int</em>) – Minimum value for the function maxima to consider
+a given number of counts as a peak.</p></li>
+<li><p><strong>max_area</strong> (<em>float</em>) – Areas &gt; max_area are considered invalid counts and
+removed from the analysis. Used to remove event with
+anomalous areas.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>counts</strong> (<em>np.darray</em>) – Array with counts for each histogram bin.</p></li>
+<li><p><strong>smooth_hist</strong> (<em>np.darray</em>) – Array with the continuous fit used to determine
+the positions of the maxima in the data.</p></li>
+<li><p><strong>bin_centre</strong> (<em>np.darray</em>) – Array with the positions of the histograms bin centres.
+Used for plotting the histogram with correct values
+for areas in the x-axis.</p></li>
+<li><p><strong>max_i</strong> (<em>list</em>) – List with the position of the maxima points.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="new_calibration.maxima">
+<span class="sig-prename descclassname"><span class="pre">new_calibration.</span></span><span class="sig-name descname"><span class="pre">maxima</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#new_calibration.maxima" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find local maxima of a function f using rising zero crossings of the gradient of f.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>function</strong> (<em>ndarray</em>) – Function f to be analysed.</p></li>
+<li><p><strong>thresh</strong> (<em>int</em>) – Only return a maxima if f[maxima] &gt; thresh.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>array</em></p></li>
+<li><p><em>Array with maxima points of f.</em></p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="new_calibration.plot_guess">
+<span class="sig-prename descclassname"><span class="pre">new_calibration.</span></span><span class="sig-name descname"><span class="pre">plot_guess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth_hist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_centres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_i</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#new_calibration.plot_guess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the histogram with an educated guess for its fitting.</p>
+<p>Visual check if the maxima positions determined by the guess_thresholds
+are reasonable.</p>
+<p>Requires guess_thresholds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ax</strong> (<em>figure axis</em>) – Figure axis of the figure to be plotted.</p></li>
+<li><p><strong>hist</strong> (<em>np.darray</em>) – Histogram obtained from the guess_thresholds function.</p></li>
+<li><p><strong>smooth_hist</strong> – Smoothed histogram obtained from the guess_thresholds
+function.</p></li>
+<li><p><strong>bin_centres</strong> – Centre of the bins for the histogram. Obtained from the
+guess_thresholds function.</p></li>
+<li><p><strong>max_i</strong> (<em>list</em>) – List with the position of the maxima points for the
+peaks in histogram. Obtained from the guess_thresholds
+function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>ax</strong> – Axis for the figure with the histogram, smoothed histogram
+and maxima points plotted.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>figure axis</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="mca.html"
+                        title="previous chapter">mca module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="protocol.html"
+                        title="next chapter">protocol module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/new_calibration.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="protocol.html" title="protocol module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="mca.html" title="mca module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">tespackage 0.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >fordocs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">new_calibration module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Leonardo Assis.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>

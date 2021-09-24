@@ -1,0 +1,631 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>tes_calibration module &#8212; tespackage 0.2.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tes_counts module" href="tes_counts.html" />
+    <link rel="prev" title="tes_analysis_leo module" href="tes_analysis_leo.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tes_counts.html" title="tes_counts module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tes_analysis_leo.html" title="tes_analysis_leo module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">tespackage 0.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">fordocs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">tes_calibration module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-tes_calibration">
+<span id="tes-calibration-module"></span><h1>tes_calibration module<a class="headerlink" href="#module-tes_calibration" title="Permalink to this headline">¶</a></h1>
+<p>Module to calibrate the tes detectors.</p>
+<p>functions:</p>
+<blockquote>
+<div><p>guess_threhsolds
+maxima
+expectation_maximisation
+hard_expectation
+hard_maximisation</p>
+</div></blockquote>
+<p>Need to check which functions are actually needed.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tes_calibration.Guess">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">Guess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth_hist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_histogram</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.Guess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="tes_calibration.Guess.bin_c">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">bin_c</span></span><a class="headerlink" href="#tes_calibration.Guess.bin_c" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tes_calibration.Guess.hist">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">hist</span></span><a class="headerlink" href="#tes_calibration.Guess.hist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tes_calibration.Guess.max_i">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">max_i</span></span><a class="headerlink" href="#tes_calibration.Guess.max_i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tes_calibration.Guess.only_histogram">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">only_histogram</span></span><a class="headerlink" href="#tes_calibration.Guess.only_histogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 5</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tes_calibration.Guess.smooth_hist">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">smooth_hist</span></span><a class="headerlink" href="#tes_calibration.Guess.smooth_hist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tes_calibration.Guess.thresholds">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">thresholds</span></span><a class="headerlink" href="#tes_calibration.Guess.thresholds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tes_calibration.MixtureModel">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">MixtureModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_likelihood</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">converged</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_noise_threshold</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.MixtureModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tes_calibration.MixtureModel" title="tes_calibration.MixtureModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tes_calibration.MixtureModel</span></code></a></p>
+<p>Subclass of namedtuple used to represent a mixture model.</p>
+<dl class="simple">
+<dt>fields:</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param_list</dt>
+<dd class="field-odd"><p>list of parameters for each distribution in the mixture.</p>
+</dd>
+<dt class="field-even">thresholds</dt>
+<dd class="field-even"><p>the intersection of neighbouring distributions in the
+mixture.</p>
+</dd>
+<dt class="field-odd">zero_loc</dt>
+<dd class="field-odd"><p>Fixed location parameter used to fit the first distribution,
+or None if the location parameter was fitted.</p>
+</dd>
+<dt class="field-even">log_likelihood</dt>
+<dd class="field-even"><p>the log of the likelihood that the model could produce
+the data used to construct it.</p>
+</dd>
+<dt class="field-odd">converged</dt>
+<dd class="field-odd"><p>boolean indicating that the expectation maximisation
+algorithm terminated normally when fitting the model.</p>
+</dd>
+<dt class="field-even">dist</dt>
+<dd class="field-even"><p>the type of distribution forming the components of the mixture,
+(see scipy.stats).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tes_calibration.MixtureModel.cdf">
+<span class="sig-name descname"><span class="pre">cdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.MixtureModel.cdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>evaluate the pdf(s) of the distribution(s) selected by d at x.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – value(s) where to the function is evaluated.</p></li>
+<li><p><strong>d</strong> – selects element(s) of param_list that parameterise the
+distributions. If None all distributions in param_list are
+used.</p></li>
+<li><p><strong>scale</strong> (<em>bool</em>) – when true return the scaled pdf, the scale is always
+param[-1].</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ndarray shape (len(d), len(x)) containing the pdf(s) or a
+single value if only 1 point in 1 distribution is selected.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tes_calibration.MixtureModel.load">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.MixtureModel.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>load model from .npz file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> – filename excluding extension”</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>instance of MixtureModel.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tes_calibration.MixtureModel.pdf">
+<span class="sig-name descname"><span class="pre">pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.MixtureModel.pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>evaluate the pdf(s) of the distribution(s) selected by d at x.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – value(s) where to the function is evaluated.</p></li>
+<li><p><strong>d</strong> – selects element(s) of param_list that parameterise the
+distributions. If None all distributions in param_list are
+used.</p></li>
+<li><p><strong>scale</strong> (<em>bool</em>) – when true return the scaled pdf, the scale is always
+param[-1].</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ndarray shape (len(d), len(x)) containing the pdf(s) or a
+single value if only 1 point in 1 distribution is selected.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tes_calibration.MixtureModel.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.MixtureModel.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>save model as .npz file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> – filename to save as, excluding extension”</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_calibration.drive_correlation">
+<span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">drive_correlation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">abs_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detection_mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.drive_correlation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the temporal cross-correlation between a channel
+measuring a heralding signal, ie the laser drive pulse, and
+a channel detecting photons. The correlation is calculated
+for the different photon numbers determined by the
+thresholds parameter.</p>
+<dl class="simple">
+<dt>abs_time: ndarray</dt><dd><p>absolute timestamp sequence.</p>
+</dd>
+<dt>detection_mask: ndarray</dt><dd><p>boolean mask that identifies the entries in abs_time
+belonging to the photon channel, other entries are
+assumed to be the heralding channel.</p>
+</dd>
+<dt>data: ndarray</dt><dd><p>energy measurement data for the photon channel.</p>
+</dd>
+<dt>masks<span class="classifier">ndarray</span></dt><dd><p>boolean masks that are appied to abs_time[detection_mask]
+and indicate which detections are assigned which
+threshold. Shape(N, len(abs_time[detection_mask]))</p>
+</dd>
+<dt>rge<span class="classifier">range</span></dt><dd><p>the range of heralding channel delays to cross correlate.</p>
+</dd>
+<dt>verbose<span class="classifier">bool</span></dt><dd><p>Print progress message as each threshold is processed.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of ndarrays representing the cross correlation.</p>
+</dd>
+</dl>
+<p>abs_time[mask] and data must be the same length.</p>
+<p>x_correlation (can be found in this packet)</p>
+<p>TODO speed up the algorithm.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_calibration.expectation_maximisation">
+<span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">expectation_maximisation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">initial_thresholds</span></em>, <em class="sig-param"><span class="pre">distribution=&lt;scipy.stats._continuous_distns.norm_gen</span> <span class="pre">object&gt;</span></em>, <em class="sig-param"><span class="pre">tol=0.01</span></em>, <em class="sig-param"><span class="pre">max_iter=30</span></em>, <em class="sig-param"><span class="pre">verbose=True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.expectation_maximisation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses a expectation maximisation algorithm in order to fit the
+TES data. Determine the thresholds</p>
+<dl class="simple">
+<dt>data<span class="classifier">ndarray</span></dt><dd><p>Data to be fitted.</p>
+</dd>
+<dt>initial_thresholds<span class="classifier">list</span></dt><dd><p>Initial thresholds from guess_thresholds.
+They divide the data into sets which will be independently fitted
+to a chosen distribution.</p>
+</dd>
+<dt>distribution<span class="classifier">scipy distribution</span></dt><dd><p>Distribution type to be used to fit data set inside two given thresholds.</p>
+</dd>
+<dt>tol<span class="classifier">float</span></dt><dd><p>Tolerance for change in log_likelihood. Determines when the program stops.</p>
+</dd>
+<dt>max_iter<span class="classifier">int</span></dt><dd><p>Maximum number of iterations to be used in the algorithm.</p>
+</dd>
+<dt>verbose<span class="classifier">bool</span></dt><dd><p>Print progress during optimisation.</p>
+</dd>
+</dl>
+<dl>
+<dt>MixtureModel(param_list, thresholds, log_likelihood,</dt><dd><p>converged, has_noise_threshold
+) : named tuple</p>
+</dd>
+<dt>param_list<span class="classifier">np.array</span></dt><dd><p>List of parameters values for distribution in the mixture.
+Each entry is a list with values for a single distribution.</p>
+<p>If a mixture model is composed of 10 gaussian distributions,
+we will have 10 entries, each of them composed of:
+[alpha, delta, scale], where alpha is the mean, delta is the
+standard deviation, scale is the relative size of the
+distribution when compared to the whole data set.</p>
+</dd>
+<dt>thresholds<span class="classifier">np.array</span></dt><dd><p>Array with the thresholds found in the algorithm.</p>
+</dd>
+<dt>ll<span class="classifier">float</span></dt><dd><p>Log likelihood of the mixture model.</p>
+</dd>
+<dt>converged<span class="classifier">bool</span></dt><dd><p>True, if algorithm converges.
+False, if maximum number of iterations was reached.</p>
+</dd>
+<dt>distribution<span class="classifier">scipy distribution</span></dt><dd><p>Type of distribution used to fit the data.</p>
+</dd>
+<dt>has_noise_threshold<span class="classifier">bool</span></dt><dd><p>Indicates the existence of a noise threshold.</p>
+</dd>
+</dl>
+<blockquote>
+<div><dl class="simple">
+<dt>hard_maximisation<span class="classifier">function</span></dt><dd><p>Applies the maximisation step. Defined on tes_calibration.py module.</p>
+</dd>
+<dt>hard_expectation<span class="classifier">function</span></dt><dd><p>Applies the expectation step. Defined on tes_calibration.py module.</p>
+</dd>
+<dt>mixture_model_log_like<span class="classifier">function</span></dt><dd><p>Calculates the log likelihood of the model. Defined on tes_calibration.py module.</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>Uses The Expectation maximisation algorithm with hard assignment of
+responsibilities.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_calibration.guess_thresholds">
+<span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">guess_thresholds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">16000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">200</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxima_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_histogram</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.guess_thresholds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Give a first guess for photon number thresholds by creating a
+smoothed histogram using Hann windows.</p>
+<p>Can also be used to only calculate the histogram, if
+only_histogram = True.</p>
+<p>To plot the results obtained in this function you can use
+plot_guess (in module tes_plotting.py).</p>
+<dl class="simple">
+<dt>data<span class="classifier">ndarray</span></dt><dd><p>The measurement data.</p>
+</dd>
+<dt>bins<span class="classifier">int</span></dt><dd><p>Number of the histogram bins.</p>
+</dd>
+<dt>win_length<span class="classifier">int</span></dt><dd><p>Hanning window length used for smoothing.</p>
+</dd>
+<dt>maxima_threshold<span class="classifier">int</span></dt><dd><p>passed to maxima function</p>
+</dd>
+<dt>only_histogram<span class="classifier">bool</span></dt><dd><p>When true, only calculates the histogram.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Guess(hist, smooth_hist, bin_c, max_i, thresholds)<span class="classifier">named tuple</span></dt><dd><dl class="simple">
+<dt>hist<span class="classifier">list</span></dt><dd><p>Histogram to be plotted.</p>
+</dd>
+<dt>smooth_hist<span class="classifier">list</span></dt><dd><p>Smoothed histogram. Returns empty list if
+only_histogram = True.</p>
+</dd>
+<dt>bin_c<span class="classifier">ndarray</span></dt><dd><p>Positions of histogram bin centers.</p>
+</dd>
+<dt>max_i<span class="classifier">list</span></dt><dd><p>List with indices of maxima in the smoothed histogram.
+Returns empty list if only_histogram = True.</p>
+</dd>
+<dt>thresholds<span class="classifier">list</span></dt><dd><p>List with first threshold guesses. Returns empty list if
+only_histogram = True.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<blockquote>
+<div><dl class="simple">
+<dt>maxima<span class="classifier">function</span></dt><dd><p>function to find the maxima points of a function, defined
+in tes_calibration.py module.</p>
+</dd>
+</dl>
+</div></blockquote>
+<blockquote>
+<div><p>The smoothing is achieved by convolving the Hanning window with
+a histogram generated using numpy.histogram. The guess still
+needs some human sanity checks, especially multiple maxima per
+photon peak. Use plot_guess() and adjust window and
+maxima_threshold to remove them.</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_calibration.hard_expectation">
+<span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">hard_expectation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">param_list</span></em>, <em class="sig-param"><span class="pre">normalise=False</span></em>, <em class="sig-param"><span class="pre">dist=&lt;scipy.stats._continuous_distns.norm_gen</span> <span class="pre">object&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.hard_expectation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the thresholds for a mixture model that define the data
+partitions. They are placed in the intersection of two
+adjacents distributions (left and right). Their positions are
+calculated by finding the root of the function
+f(x) = left(x) - right(x) using the scipy routine brentq.</p>
+<dl>
+<dt>param_list<span class="classifier">np.array</span></dt><dd><p>List of parameters values for distribution in the mixture.
+Each entry is a list with values for a single distribution.</p>
+<p>If a mixture model is composed of 10 gaussian distributions,
+we will have 10 entries, each of them composed of:
+[alpha, delta, scale], where alpha is the mean, delta is the
+standard deviation, scale is the relative size of the
+distribution when compared to the whole data set.</p>
+</dd>
+<dt>normalise: bool</dt><dd><p>If true, all distributions are normalised, with area = 1.</p>
+</dd>
+<dt>dist<span class="classifier">scipy distribution</span></dt><dd><p>Type of distribution used to fit the data.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>thresholds<span class="classifier">ndarray</span></dt><dd><p>ndarray with threshold values.</p>
+</dd>
+</dl>
+<blockquote>
+<div><dl class="simple">
+<dt>normalised_pdf<span class="classifier">function</span></dt><dd><p>Defined on tes_calibration.py module.</p>
+</dd>
+<dt>scaled_pdf<span class="classifier">function</span></dt><dd><p>Defined on tes_calibration.py module.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_calibration.hard_maximisation">
+<span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">hard_maximisation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">thresholds</span></em>, <em class="sig-param"><span class="pre">dist=&lt;scipy.stats._continuous_distns.norm_gen</span> <span class="pre">object&gt;</span></em>, <em class="sig-param"><span class="pre">verbose=True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.hard_maximisation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a set of thresholds, fit each data partition inside a
+threshold using the chosen distribution. Return the parameters
+of all distributions fitted in a list.</p>
+<dl class="simple">
+<dt>data<span class="classifier">ndarray</span></dt><dd><p>Data to model.</p>
+</dd>
+<dt>thresholds<span class="classifier">list</span></dt><dd><p>Thresholds that divide data into separate distributions.</p>
+</dd>
+<dt>dist<span class="classifier">scipy distribution</span></dt><dd><p>Type of distribution used to fit data.</p>
+</dd>
+</dl>
+<dl>
+<dt>param_list<span class="classifier">list</span></dt><dd><p>List of parameters values for distribution in the mixture.
+Each entry is a list with values for a single distribution.</p>
+<p>If a mixture model is composed of 10 gaussian distributions,
+we will have 10 entries, each of them composed of:
+[alpha, delta, scale], where alpha is the mean, delta is the
+standard deviation, scale is the relative size of the
+distribution when compared to the whole data set.</p>
+</dd>
+</dl>
+<blockquote>
+<div><dl class="simple">
+<dt>partition<span class="classifier">function</span></dt><dd><p>Defined on tes_calibration.py module.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_calibration.maxima">
+<span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">maxima</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.maxima" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find local maxima of a function using rising zero crossings of the
+gradient of f.</p>
+<dl class="simple">
+<dt>f<span class="classifier">ndarray</span></dt><dd><p>function to find maxima for</p>
+</dd>
+<dt>thresh<span class="classifier">int</span></dt><dd><p>Only return a maxima if f[maxima] &gt; thresh</p>
+</dd>
+</dl>
+<blockquote>
+<div><p>: array
+Array with maxima points of f.</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_calibration.mixture_model_log_like">
+<span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">mixture_model_log_like</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">param_list</span></em>, <em class="sig-param"><span class="pre">dist=&lt;scipy.stats._continuous_distns.norm_gen</span> <span class="pre">object&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.mixture_model_log_like" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the log likelihood of a mixture model.</p>
+<dl>
+<dt>data<span class="classifier">ndarray</span></dt><dd><p>Data used to realise the fit.</p>
+</dd>
+<dt>param_list<span class="classifier">list</span></dt><dd><p>List of parameters values for distribution in the mixture.
+Each entry is a list with values for a single distribution.</p>
+<p>If a mixture model is composed of 10 gaussian distributions,
+we will have 10 entries, each of them composed of:
+[alpha, delta, scale], where alpha is the mean, delta is the
+standard deviation, scale is the relative size of the
+distribution when compared to the whole data set.</p>
+</dd>
+<dt>distribution<span class="classifier">scipy distribution</span></dt><dd><p>Type of distribution used to fit the data.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>log_like<span class="classifier">float</span></dt><dd><p>Log likelihood of the mixture model.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_calibration.normalised_pdf">
+<span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">normalised_pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameters</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distribution</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.normalised_pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience function to calculate the normalised
+probability distribution function at each x for a given distribution.</p>
+<dl class="simple">
+<dt>x<span class="classifier">float</span></dt><dd><p>calculate the pdf a each x</p>
+</dd>
+<dt>parameters<span class="classifier">iterable</span></dt><dd><p>fitted distribution parameters</p>
+</dd>
+<dt>distribution<span class="classifier">scipy distribution</span></dt><dd><p>type of distribution to be fitted</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>dist.pdf<span class="classifier">ndarray</span></dt><dd><p>probability density function evaluated at x</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_calibration.partition">
+<span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">partition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.partition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the ith partition of the data as defined by thresholds.</p>
+<dl class="simple">
+<dt>data<span class="classifier">ndarray</span></dt><dd><p>Data to be fitted in</p>
+</dd>
+<dt>thresholds<span class="classifier">iterable</span></dt><dd><p>Values used to partition the data.</p>
+</dd>
+<dt>i<span class="classifier">int</span></dt><dd><p>The partition to return, the ith partition is defined as
+threshold[i] &lt; data &lt;= threshold[i+1]. The last partition,
+when i = len(thresholds-1), is defined as</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>partitioned_data<span class="classifier">ndarray</span></dt><dd><p>Portion of data inside the interval:
+thresholds[i-1] &lt; data &lt; thresholds[i]</p>
+</dd>
+</dl>
+<blockquote>
+<div><p>This is used to assign a hard responsibility in the expectation
+maximisation algorithm used to fit data to a mixture model.</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_calibration.scaled_pdf">
+<span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">scaled_pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameters</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distribution</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.scaled_pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience function to calculate pdf at each x for a given distribution.
+Normalisation is given by params[-1].</p>
+<dl class="simple">
+<dt>x<span class="classifier">float</span></dt><dd><p>calculate the pdf a each x</p>
+</dd>
+<dt>parameters<span class="classifier">iterable</span></dt><dd><p>fitted distribution parameters.
+parameters[-1] give the normalisation factor.</p>
+</dd>
+<dt>distribution<span class="classifier">scipy distribution</span></dt><dd><p>type of distribution to be fitted</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>dist.pdf<span class="classifier">ndarray</span></dt><dd><p>probability density function evaluated at x</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_calibration.x_correlation">
+<span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">x_correlation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rge</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.x_correlation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cross correlation of timestamp sequences s1 and s2 over the delay range r.</p>
+<dl class="simple">
+<dt>s1: ndarray</dt><dd><p>Monotonically increasing timestamp sequence.</p>
+</dd>
+<dt>s2: ndarray</dt><dd><p>Monotonically increasing timestamp sequence.</p>
+</dd>
+<dt>rge:</dt><dd><p>range of delays added to s1</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>x_corr<span class="classifier">ndarray</span></dt><dd><p>Representing the cross correlation function.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_calibration.xcor">
+<span class="sig-prename descclassname"><span class="pre">tes_calibration.</span></span><span class="sig-name descname"><span class="pre">xcor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_calibration.xcor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count correlations between timestamp sequences.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s1</strong> (<em>ndarray</em>) – Monotonically increasing timestamp sequence.</p></li>
+<li><p><strong>s2</strong> (<em>ndarray</em>) – Monotonically increasing timestamp sequence.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>correlation count.</p>
+</dd>
+<dt class="field-odd">Notes</dt>
+<dd class="field-odd"><p>iterates over s1 and performs a linear search of  s2 for the s1
+timestamp.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tes_analysis_leo.html"
+                        title="previous chapter">tes_analysis_leo module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tes_counts.html"
+                        title="next chapter">tes_counts module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/tes_calibration.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tes_counts.html" title="tes_counts module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tes_analysis_leo.html" title="tes_analysis_leo module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">tespackage 0.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >fordocs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">tes_calibration module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Leonardo Assis.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>

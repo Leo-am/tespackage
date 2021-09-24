@@ -1,0 +1,7 @@
+tes\_data\_acquisition module
+=============================
+
+.. automodule:: tes_data_acquisition
+   :members:
+   :undoc-members:
+   :show-inheritance:

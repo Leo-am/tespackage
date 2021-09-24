@@ -1,0 +1,808 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>analysis module &#8212; tespackage 0.2.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="base module" href="base.html" />
+    <link rel="prev" title="fordocs" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-analysis">
+<span id="analysis-module"></span><h1>analysis module<a class="headerlink" href="#module-analysis" title="Permalink to this headline">¶</a></h1>
+<p>Calibration and modeling</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="analysis.Counts">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">Counts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">count</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uncorrelated</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacuum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_noise_threshold</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.Counts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="analysis.Counts.count">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">count</span></span><a class="headerlink" href="#analysis.Counts.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="analysis.Counts.has_noise_threshold">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">has_noise_threshold</span></span><a class="headerlink" href="#analysis.Counts.has_noise_threshold" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="analysis.Counts.uncorrelated">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">uncorrelated</span></span><a class="headerlink" href="#analysis.Counts.uncorrelated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="analysis.Counts.vacuum">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">vacuum</span></span><a class="headerlink" href="#analysis.Counts.vacuum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="analysis.Guess">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">Guess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.Guess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="analysis.Guess.bin_c">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">bin_c</span></span><a class="headerlink" href="#analysis.Guess.bin_c" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="analysis.Guess.f">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">f</span></span><a class="headerlink" href="#analysis.Guess.f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="analysis.Guess.hist">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">hist</span></span><a class="headerlink" href="#analysis.Guess.hist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="analysis.Guess.max_i">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">max_i</span></span><a class="headerlink" href="#analysis.Guess.max_i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="analysis.Guess.thresholds">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">thresholds</span></span><a class="headerlink" href="#analysis.Guess.thresholds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="analysis.MixtureModel">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">MixtureModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_likelihood</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">converged</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_noise_threshold</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.MixtureModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#analysis.MixtureModel" title="analysis.MixtureModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">analysis.MixtureModel</span></code></a></p>
+<p>Subclass of namedtuple used to represent a mixture model.</p>
+<dl class="simple">
+<dt>fields:</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param_list</dt>
+<dd class="field-odd"><p>list of parameters for each distribution in the mixture.</p>
+</dd>
+<dt class="field-even">thresholds</dt>
+<dd class="field-even"><p>the intersection of neighbouring distributions in the
+mixture.</p>
+</dd>
+<dt class="field-odd">zero_loc</dt>
+<dd class="field-odd"><p>Fixed location parameter used to fit the first distribution,
+or None if the location parameter was fitted.</p>
+</dd>
+<dt class="field-even">log_likelihood</dt>
+<dd class="field-even"><p>the log of the likelihood that the model could produce
+the data used to construct it.</p>
+</dd>
+<dt class="field-odd">converged</dt>
+<dd class="field-odd"><p>boolean indicating that the expectation maximisation
+algorithm terminated normally when fitting the model.</p>
+</dd>
+<dt class="field-even">dist</dt>
+<dd class="field-even"><p>the type of distribution forming the components of the mixture,
+(see scipy.stats).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="analysis.MixtureModel.cdf">
+<span class="sig-name descname"><span class="pre">cdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.MixtureModel.cdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>evaluate the pdf(s) of the distribution(s) selected by d at x.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – value(s) where to the function is evaluated.</p></li>
+<li><p><strong>d</strong> – selects element(s) of param_list that parameterise the
+distributions. If None all distributions in param_list are
+used.</p></li>
+<li><p><strong>scale</strong> (<em>bool</em>) – when true return the scaled pdf, the scale is always
+param[-1].</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ndarray shape (len(d), len(x)) containing the pdf(s) or a
+single value if only 1 point in 1 distribution is selected.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="analysis.MixtureModel.load">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.MixtureModel.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>load model from .npz file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> – filename excluding extension”</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>instance of MixtureModel.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="analysis.MixtureModel.pdf">
+<span class="sig-name descname"><span class="pre">pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.MixtureModel.pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>evaluate the pdf(s) of the distribution(s) selected by d at x.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – value(s) where to the function is evaluated.</p></li>
+<li><p><strong>d</strong> – selects element(s) of param_list that parameterise the
+distributions. If None all distributions in param_list are
+used.</p></li>
+<li><p><strong>scale</strong> (<em>bool</em>) – when true return the scaled pdf, the scale is always
+param[-1].</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ndarray shape (len(d), len(x)) containing the pdf(s) or a
+single value if only 1 point in 1 distribution is selected.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="analysis.MixtureModel.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.MixtureModel.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>save model as .npz file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> – filename to save as, excluding extension”</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="analysis.Povm">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">Povm</span></span><a class="headerlink" href="#analysis.Povm" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">analysis.povm</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.coherent_ml">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">coherent_ml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">counts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">povm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_photon_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x0</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.coherent_ml" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.coherent_neg_ll">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">coherent_neg_ll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">counts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">povm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_photon_number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.coherent_neg_ll" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.coincidence">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">coincidence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">abs_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.coincidence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find coincidences between two channels returning indices of partner events.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>abs_time</strong> (<em>ndarray</em>) – absolute times.</p></li>
+<li><p><strong>mask</strong> (<em>ndarray</em>) – ndarray of bool that identifies the channels in
+abs_time. For abs_times where mask is False, time t is
+coincident if abs_time+low &lt;= t &lt;= abs_time+high. If
+the mask is True t is coincident if
+abs_time-high &lt;= t &lt;= abs_time-low.</p></li>
+<li><p><strong>low</strong> (<em>float</em>) – the low side of the coincidence window.</p></li>
+<li><p><strong>high</strong> (<em>float</em>) – the high side of the coincidence whindw.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(coinc, coinc_mask) where coinc is a ndarray of indices of the
+coincident event in the other channel. When more than one event is
+found in the window the negated value of the first index is
+entered.
+coinc_mask is a ndarray of bool indicating where exactly one
+event was found in the window.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.count">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacuum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_noise_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coinc_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">herald_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.count" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>ndarray</em>) – measurement data.</p></li>
+<li><p><strong>measurement_model</strong> (<a class="reference internal" href="#analysis.MixtureModel" title="analysis.MixtureModel"><em>MixtureModel</em></a>) – model created using
+expectation_maximisation.</p></li>
+<li><p><strong>vacuum</strong> (<em>bool</em>) – estimate vacuum terms using coinc_mask and herald_mask.</p></li>
+<li><p><strong>coinc_mask</strong> – ndarray of bool indicating coincidence.</p></li>
+<li><p><strong>herald_mask</strong> – ndarray of bool indicating which events are in the
+heralding channel.</p></li>
+<li><p><strong>has_noise_threshold</strong> – When True model.thresholds[1] represents the
+boundary between noise and 1 photon.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Counts(count, uncorrelated, vacuum). Where count is an ndarray of
+counts for each photon number
+and len(count)=len(measurement_model.thresholds). uncorrelated is a
+ndarray the same shape as count and counts
+events not correlated with the herald. uncorrelated is only
+calculated when coinc_mask and herald_mask are supplied.
+vacuum replicates the parameter value and indicates that count[0]
+contains the vacuum count.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.displaced_thermal">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">displaced_thermal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_photon_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nbar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">200</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.displaced_thermal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.displaced_vacuum">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">displaced_vacuum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_photon_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">200</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.displaced_vacuum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.drive_correlation">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">drive_correlation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">abs_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detection_mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.drive_correlation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the temporal cross-correlation between a channel measuring a
+heralding signal, ie the laser drive pulse, and a channel detecting photons.
+The correlation is calculated for the different photon numbers determined by
+the thresholds parameter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>abs_time</strong> (<em>ndarray</em>) – absolute timestamp sequence.</p></li>
+<li><p><strong>detection_mask</strong> (<em>ndarray</em>) – boolean mask that identifies the entries in
+abs_time belonging to the photon channel,
+other entries are assumed to be the heralding
+channel.</p></li>
+<li><p><strong>data</strong> (<em>ndarray</em>) – energy measurement data for the photon channel.</p></li>
+<li><p><strong>masks</strong> (<em>ndarray</em>) – boolean masks that are appied to
+abs_time[detection_mask] and indicate which detections
+are assigned which threshold.
+Shape(N, len(abs_time[detection_mask]))</p></li>
+<li><p><strong>r</strong> – the range of heralding channel delays to cross correlate.</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – Print progress message as each threshold is processed.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of ndarrays representing the cross correlation.</p>
+</dd>
+<dt class="field-odd">Note</dt>
+<dd class="field-odd"><p>abs_time[mask] and data must be the same length.
+TODO speed up the algorithm.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.expectation_maximisation">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">expectation_maximisation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">initial_thresholds</span></em>, <em class="sig-param"><span class="pre">has_noise_threshold=False</span></em>, <em class="sig-param"><span class="pre">dist=&lt;scipy.stats._continuous_distns.gamma_gen</span> <span class="pre">object&gt;</span></em>, <em class="sig-param"><span class="pre">tol=0.01</span></em>, <em class="sig-param"><span class="pre">max_iter=30</span></em>, <em class="sig-param"><span class="pre">verbose=True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.expectation_maximisation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fit a mixture of distributions to data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>ndarray</em>) – the measurement data.</p></li>
+<li><p><strong>initial_thresholds</strong> – initial thresholds that divide data into
+individual distributions in the mixture.</p></li>
+<li><p><strong>fix_noise</strong> (<em>bool</em>) – When True keep threshold[1] fixed.</p></li>
+<li><p><strong>dist</strong> – the type of distribution to use (see scipy.stats)</p></li>
+<li><p><strong>tol</strong> (<em>float</em>) – termination tolerance for change in log_likelihood.</p></li>
+<li><p><strong>max_iter</strong> (<em>int</em>) – max iterations of expectation maximisation to use.</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – print progress during optimisation.</p></li>
+<li><p><strong>normalise</strong> (<em>bool</em>) – passed to maximise step, thresholds are calculated
+using the intersection of the normalised distributions.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(param_list, zero_loc, log_likelihood, converged) as a named tuple.
+Where param_list is a list of parameter values for distribution in
+the mixture, zero_loc is the arg used to fit, log_likelihood is the
+log_likelihood of the fit, converged is a bool indicating normal
+termination.</p>
+</dd>
+<dt class="field-odd">Note</dt>
+<dd class="field-odd"><p>Uses The Expectation maximisation algorithm with hard assignment of
+responsibilities.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.fit_input_ls">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">fit_input_ls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">counts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">povm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thermal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qtN</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">150</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.fit_input_ls" title="Permalink to this definition">¶</a></dt>
+<dd><p>Responsible to make the fit for the displaced coherent/thermal state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>array</strong> (<em>counts</em>) – The number of counts in each model</p></li>
+<li><p><strong>int</strong> (<em>qtN</em>) – Dimension of the Fock space, max photon number is N-1</p></li>
+<li><p><strong>thermal</strong> (<em>(</em><em>optional</em><em>)</em>) – When True model input as displaced thermal state otherwise
+model as coherent state (displaced thermal).</p></li>
+<li><p><strong>povm</strong> (<em>(</em><em>optional</em><em>)</em>) – The detector povm</p></li>
+<li><p><strong>int</strong> – The dimension of the Fock space to use for qutip models.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.fit_state_least_squares">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">fit_state_least_squares</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">counts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">povm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_outcome</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacuum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thermal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">150</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.fit_state_least_squares" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.guess_thresholds">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">guess_thresholds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">16000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">200</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxima_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.guess_thresholds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Guess the photon number thresholds using a smoothed histogram.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>ndarray</em>) – the measurement data.</p></li>
+<li><p><strong>bins</strong> – argument to numpy.histogram.</p></li>
+<li><p><strong>win_length</strong> (<em>int</em>) – Hanning window length used for smoothing.</p></li>
+<li><p><strong>maxima_threshold</strong> (<em>int</em>) – passed to maxima function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(hist, f, bin_c, max_i, thresholds) as a named
+tuple. Where hist is the histogram
+generated by np.histogram(), f is the smoothed histogram, bin_c is a
+ndarray of bin centers, max_i are the indices of the maxima in f,
+and thresholds is a ndarray of threshold guesses.</p>
+</dd>
+<dt class="field-odd">Notes</dt>
+<dd class="field-odd"><p>The smoothing is achieved by convolving the Hanning window with a
+histogram generated using numpy.histogram. The guess still needs
+some human sanity checks, especially multiple maxima per photon
+peak. Use plot_guess() and adjust window and maxima_threshold to
+remove them.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.hard_expectation">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">hard_expectation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">param_list</span></em>, <em class="sig-param"><span class="pre">normalise=False</span></em>, <em class="sig-param"><span class="pre">dist=&lt;scipy.stats._continuous_distns.gamma_gen</span> <span class="pre">object&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.hard_expectation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the thresholds for a mixture model that define the data
+partitions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param_list</strong> (<em>list</em>) – list of parameters for the distributions in the
+mixture model, returned by expectation_maximisation().</p></li>
+<li><p><strong>fix_noise</strong> – Fix threshold[1] at this value.</p></li>
+<li><p><strong>normalise</strong> (<em>bool</em>) – calculate thresholds based on a mixture of
+normalised pdf’s.</p></li>
+<li><p><strong>dist</strong> – type of distribution</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ndarray of threshold values.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.hard_maximisation">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">hard_maximisation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">thresholds</span></em>, <em class="sig-param"><span class="pre">dist=&lt;scipy.stats._continuous_distns.gamma_gen</span> <span class="pre">object&gt;</span></em>, <em class="sig-param"><span class="pre">verbose=True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.hard_maximisation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fit distributions to the data partitioned by thresholds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – the data to model.</p></li>
+<li><p><strong>thresholds</strong> – thresholds that divide data into separate distributions.</p></li>
+<li><p><strong>dist</strong> – type of distribution to fit (scipy.stats).</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – Print fitted distribution parameters.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of parameters for each distribution.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.maxima">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">maxima</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.maxima" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find local maxima of f using rising zero crossings of the gradient of f.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – function to find maxima for</p></li>
+<li><p><strong>thresh</strong> – Only return a maxima if f[maxima]&gt;thresh</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>array of maxima.</p>
+</dd>
+<dt class="field-odd">Notes</dt>
+<dd class="field-odd"><p>Used to find the maxima of the smoothed measurement histogram.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.mixture_model_ll">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">mixture_model_ll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">param_list</span></em>, <em class="sig-param"><span class="pre">dist=&lt;scipy.stats._continuous_distns.gamma_gen</span> <span class="pre">object&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.mixture_model_ll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the log likelihood of a mixture model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>ndarray</em>) – the data used to construct the model.</p></li>
+<li><p><strong>param_list</strong> – list of parameters for each distribution in the model.</p></li>
+<li><p><strong>dist</strong> – the type of distribution to use (see scipy.stats).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the log likelihood.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.model_outcomes">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">model_outcomes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thermal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">povm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qtN</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.model_outcomes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model the measurement outcome probabilities assuming the input is a
+displaced thermal state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>iterable</strong> (<em>x</em>) – The state parameters</p></li>
+<li><p><strong>int</strong> (<em>N</em>) – Dimension of the Fock space, max photon number is N-1</p></li>
+<li><p><strong>thermal</strong> – When True model input as displaced thermal state otherwise
+model as coherent state (displaced thermal).</p></li>
+<li><p><strong>povm</strong> – The detector povm</p></li>
+<li><p><strong>qtN</strong> – The dimension of the Fock space to use for qutip models.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.normalised_pdf">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">normalised_pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>, <em class="sig-param"><span class="pre">params</span></em>, <em class="sig-param"><span class="pre">dist=&lt;scipy.stats._continuous_distns.gamma_gen</span> <span class="pre">object&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.normalised_pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience function, calculate normalised pdf at each x for dist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>union</em><em>[</em><em>numpy.ndarray</em><em>, </em><em>int</em><em>]</em>) – calculate the pdf a each x</p></li>
+<li><p><strong>params</strong> (<em>iterable</em>) – fitted distribution parameters</p></li>
+<li><p><strong>dist</strong> – type of distribution (see scipy.stats)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ndarray containing pdf(x)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.outcome_probabilities">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">outcome_probabilities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">povm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_photon_number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.outcome_probabilities" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.partition">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">partition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.partition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the ith partition of the data as defined by thresholds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>ndarray</em>) – the data to partition.</p></li>
+<li><p><strong>thresholds</strong> (<em>iterable</em>) – the threshold values that partition data.</p></li>
+<li><p><strong>i</strong> (<em>int</em>) – the partition to return, the ith partition is defined as
+threshold[i] &lt; data &lt;= threshold[i+1]. The last partition,
+when i = len(thresholds-1), is defined as</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ndarray of the data in the partition.</p>
+</dd>
+<dt class="field-odd">Note</dt>
+<dd class="field-odd"><p>This is used to assign a hard responsibility in the expectation
+maximisation algorithm used to fit data to a mixture model.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.plot_guess">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">plot_guess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'\\texttt{area}'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.plot_guess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.plot_ls_state">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">plot_ls_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">counts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thermal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.plot_ls_state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.plot_mixture_model">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">plot_mixture_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">counts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalised</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'\\texttt{area}'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.plot_mixture_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot a mixture model optionally including a histogram of the modeled data.
+if no data is None x must not be None.</p>
+<p>#FIXME bar = True does not display data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<a class="reference internal" href="#analysis.MixtureModel" title="analysis.MixtureModel"><em>MixtureModel</em></a>) – the mixture model.</p></li>
+<li><p><strong>data</strong> (<em>ndarray</em>) – the data to histogram.</p></li>
+<li><p><strong>xrange</strong> (<em>tuple</em>) – the x range to plot.</p></li>
+<li><p><strong>normalised</strong> (<em>bool</em>) – normalise the model distributions.</p></li>
+<li><p><strong>bins</strong> – passed to numpy.histogram().</p></li>
+<li><p><strong>bar</strong> (<em>bool</em>) – Plot bars instead of markers.</p></li>
+<li><p><strong>figsize</strong> – passed to matplotlib.pyplot.figure().</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the figure handle.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.plot_state_fit">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">plot_state_fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nbar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">counts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">povm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.plot_state_fit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.povm_elements">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">povm_elements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.povm_elements" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.resize_vector">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">resize_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.resize_vector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.retime">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">retime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">events</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tdat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fidx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tidx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.retime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.scaled_pdf">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">scaled_pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>, <em class="sig-param"><span class="pre">params</span></em>, <em class="sig-param"><span class="pre">dist=&lt;scipy.stats._continuous_distns.gamma_gen</span> <span class="pre">object&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.scaled_pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience function, calculate pdf at each x for dist, normalisation is
+given by params[-1].</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>union</em><em>[</em><em>numpy.ndarray</em><em>, </em><em>int</em><em>]</em>) – calculate the pdf a each x</p></li>
+<li><p><strong>params</strong> (<em>iterable</em>) – fitted distribution parameters</p></li>
+<li><p><strong>dist</strong> – type of distribution (see scipy.stats)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ndarray containing pdf(x)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.thermal_ml">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">thermal_ml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">counts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">povm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_photon_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x0</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.thermal_ml" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.thermal_neg_ll">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">thermal_neg_ll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">counts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">povm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_photon_number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.thermal_neg_ll" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.threshold_masks">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">threshold_masks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.threshold_masks" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – </p></li>
+<li><p><strong>model</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.window">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">window</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">abs_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.window" title="Permalink to this definition">¶</a></dt>
+<dd><p>get offsets from the current index i in abs_time that are in the relative
+time window defined by low and high.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i</strong> (<em>int</em>) – current abs_time index.</p></li>
+<li><p><strong>abs_time</strong> (<em>ndarray</em>) – absolute times.</p></li>
+<li><p><strong>low</strong> – low end of relative window.</p></li>
+<li><p><strong>high</strong> – high end of relative window.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(low_o, high_o) coincident times are abs_time[low_o:i+high_o]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.x_correlation">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">x_correlation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.x_correlation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cross correlation of timestamp sequences s1 and s2 over the delay range r.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s1</strong> (<em>ndarray</em>) – Monotonically increasing timestamp sequence.</p></li>
+<li><p><strong>s2</strong> (<em>ndarray</em>) – Monotonically increasing timestamp sequence.</p></li>
+<li><p><strong>r</strong> – range of delays added to s1</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ndarray representing the cross correlation function.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.xcor">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">xcor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.xcor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count correlations between timestamp sequences.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s1</strong> (<em>ndarray</em>) – Monotonically increasing timestamp sequence.</p></li>
+<li><p><strong>s2</strong> (<em>ndarray</em>) – Monotonically increasing timestamp sequence.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>correlation count.</p>
+</dd>
+<dt class="field-odd">Notes</dt>
+<dd class="field-odd"><p>iterates over s1 and performs a linear search of  s2 for the s1
+timestamp.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="analysis.xcor_plot">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">xcor_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_noise_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.xcor_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">tespackage</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">fordocs</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">analysis module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="base.html">base module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filesets.html">filesets module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="folder_management.html">folder_management module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maps.html">maps module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mca.html">mca module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="protocol.html">protocol module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="registers.html">registers module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">fordocs</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">fordocs</a></li>
+      <li>Next: <a href="base.html" title="next chapter">base module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Leonardo Assis.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/analysis.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

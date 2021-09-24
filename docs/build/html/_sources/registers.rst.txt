@@ -1,0 +1,7 @@
+registers module
+================
+
+.. automodule:: registers
+   :members:
+   :undoc-members:
+   :show-inheritance:

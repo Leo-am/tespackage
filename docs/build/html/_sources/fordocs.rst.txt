@@ -1,0 +1,117 @@
+fordocs package
+===============
+
+Submodules
+----------
+
+fordocs.analysis module
+-----------------------
+
+.. automodule:: fordocs.analysis
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+fordocs.base module
+-------------------
+
+.. automodule:: fordocs.base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+fordocs.calibration module
+--------------------------
+
+.. automodule:: fordocs.calibration
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+fordocs.counts module
+---------------------
+
+.. automodule:: fordocs.counts
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+fordocs.data module
+-------------------
+
+.. automodule:: fordocs.data
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+fordocs.data\_acquisition module
+--------------------------------
+
+.. automodule:: fordocs.data_acquisition
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+fordocs.folder\_management module
+---------------------------------
+
+.. automodule:: fordocs.folder_management
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+fordocs.maps module
+-------------------
+
+.. automodule:: fordocs.maps
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+fordocs.mca module
+------------------
+
+.. automodule:: fordocs.mca
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+fordocs.mca\_control module
+---------------------------
+
+.. automodule:: fordocs.mca_control
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+fordocs.protocol module
+-----------------------
+
+.. automodule:: fordocs.protocol
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+fordocs.registers module
+------------------------
+
+.. automodule:: fordocs.registers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+fordocs.traces module
+---------------------
+
+.. automodule:: fordocs.traces
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: fordocs
+   :members:
+   :undoc-members:
+   :show-inheritance:

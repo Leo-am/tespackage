@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>tes_counts module &#8212; tespackage 0.2.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tes_data_acquisition module" href="tes_data_acquisition.html" />
+    <link rel="prev" title="tes_calibration module" href="tes_calibration.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tes_data_acquisition.html" title="tes_data_acquisition module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tes_calibration.html" title="tes_calibration module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">tespackage 0.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">fordocs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">tes_counts module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-tes_counts">
+<span id="tes-counts-module"></span><h1>tes_counts module<a class="headerlink" href="#module-tes_counts" title="Permalink to this headline">¶</a></h1>
+<p>Given the thresholds, counts the number of photons and determine coincidence counts.</p>
+<dl class="simple">
+<dt>functions:</dt><dd><p>count_leo
+coincidence
+window
+threshold_masks</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="tes_counts.Counts">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">tes_counts.</span></span><span class="sig-name descname"><span class="pre">Counts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">count</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uncorrelated</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacuum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_noise_threshold</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_counts.Counts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="tes_counts.Counts.count">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">count</span></span><a class="headerlink" href="#tes_counts.Counts.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tes_counts.Counts.has_noise_threshold">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">has_noise_threshold</span></span><a class="headerlink" href="#tes_counts.Counts.has_noise_threshold" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tes_counts.Counts.uncorrelated">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">uncorrelated</span></span><a class="headerlink" href="#tes_counts.Counts.uncorrelated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tes_counts.Counts.vacuum">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">vacuum</span></span><a class="headerlink" href="#tes_counts.Counts.vacuum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tes_counts.Povm">
+<span class="sig-prename descclassname"><span class="pre">tes_counts.</span></span><span class="sig-name descname"><span class="pre">Povm</span></span><a class="headerlink" href="#tes_counts.Povm" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">tes_counts.povm</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_counts.coincidence">
+<span class="sig-prename descclassname"><span class="pre">tes_counts.</span></span><span class="sig-name descname"><span class="pre">coincidence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">abs_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_counts.coincidence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find coincidences between two channels returning indices of partner events.</p>
+<dl class="simple">
+<dt>abs_time<span class="classifier">ndarray</span></dt><dd><p>Array where each entry corresponds to the time where the detection was
+performed with respect to an initial time t0.
+This array can be constructed using np.cumsum(CaptureData(datapath).times).</p>
+</dd>
+<dt>mask<span class="classifier">ndarray bool</span></dt><dd><p>Identifies the channels in abs_time.
+For abs_times where mask is False, time t is coincident if
+abs_time+low &lt;= t &lt;= abs_time+high.
+If the mask is True t is coincident if
+abs_time-high &lt;= t &lt;= abs_time-low.</p>
+</dd>
+<dt>low<span class="classifier">float</span></dt><dd><p>The starting of the coincidence window.</p>
+</dd>
+<dt>high<span class="classifier">float</span></dt><dd><p>The ending side of the coincidence window.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>coincidences(coinc, coinc_mask)<span class="classifier">tuple</span></dt><dd><dl class="simple">
+<dt>coinc<span class="classifier">ndarray</span></dt><dd><p>Indexes of the coincident event in the other channel.
+When more than one event is found in the window the negated value
+of the first index is entered.</p>
+</dd>
+<dt>coinc_mask<span class="classifier">ndarray bool</span></dt><dd><p>Indicates where exactly one event was found in the window.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Requires: window</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_counts.count_leo">
+<span class="sig-prename descclassname"><span class="pre">tes_counts.</span></span><span class="sig-name descname"><span class="pre">count_leo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacuum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_noise_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coinc_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">herald_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_counts.count_leo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Give the number of counts for each number of photons.</p>
+<dl class="simple">
+<dt>data<span class="classifier">ndarray</span></dt><dd><p>Measured data.</p>
+</dd>
+<dt>measurement_model<span class="classifier">MixtureModel</span></dt><dd><p>Output from expectation_maximisation function.
+Refer to it to further details.</p>
+</dd>
+<dt>vacuum<span class="classifier">bool</span></dt><dd><p>Estimate vacuum terms using coinc_mask and herald_mask</p>
+</dd>
+<dt>coinc_mask<span class="classifier">ndarray bool</span></dt><dd><p>Mask indicating coincidence counts.</p>
+</dd>
+<dt>herald_mask<span class="classifier">ndarray bool</span></dt><dd><p>Mask indicating which events are in the heralding channel.</p>
+</dd>
+<dt>has_noise_threshold<span class="classifier">bool</span></dt><dd><p>if True model.thresholds[1] represents the boundary between
+noise and 1 photon.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Counts(count, uncorrelated, vacuum)<span class="classifier">named tuple</span></dt><dd><dl class="simple">
+<dt>count<span class="classifier">ndarray</span></dt><dd><p>Counts for each photon number</p>
+</dd>
+<dt>uncorrelated :</dt><dd><p>Counts events not correlated with herald.
+Only calculated when coinc_mask and herald_mask are provided.</p>
+</dd>
+<dt>vacuum :</dt><dd><p>indicates if count[0] contains vacuum count</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_counts.threshold_masks">
+<span class="sig-prename descclassname"><span class="pre">tes_counts.</span></span><span class="sig-name descname"><span class="pre">threshold_masks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_counts.threshold_masks" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – </p></li>
+<li><p><strong>model</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes_counts.window">
+<span class="sig-prename descclassname"><span class="pre">tes_counts.</span></span><span class="sig-name descname"><span class="pre">window</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ind</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">abs_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes_counts.window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get offsets from the current index ind in abs_time that are in the relative
+time window defined by low and high.</p>
+<dl class="simple">
+<dt>ind<span class="classifier">int</span></dt><dd><p>Current index for abs_time.</p>
+</dd>
+<dt>abs_time<span class="classifier">ndarray</span></dt><dd><p>Absolute times.</p>
+</dd>
+<dt>low<span class="classifier">float</span></dt><dd><p>Starting point of the relative window.</p>
+</dd>
+<dt>high<span class="classifier">float</span></dt><dd><p>Ending point of the relative window.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>(low_index, high_index)<span class="classifier">tuple</span></dt><dd><p>coincident times are abs_time[low_index:ind+high_index]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tes_calibration.html"
+                        title="previous chapter">tes_calibration module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tes_data_acquisition.html"
+                        title="next chapter">tes_data_acquisition module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/tes_counts.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tes_data_acquisition.html" title="tes_data_acquisition module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tes_calibration.html" title="tes_calibration module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">tespackage 0.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >fordocs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">tes_counts module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Leonardo Assis.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>

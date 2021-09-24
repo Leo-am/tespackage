@@ -1,0 +1,7 @@
+filesets module
+===============
+
+.. automodule:: filesets
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>base module &#8212; tespackage 0.2.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="data module" href="data.html" />
+    <link rel="prev" title="analysis module" href="analysis.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-base">
+<span id="base-module"></span><h1>base module<a class="headerlink" href="#module-base" title="Permalink to this headline">¶</a></h1>
+<p>Base module with connections between the python and the VHDL codes.</p>
+<p>Author: Geoff Gillett</p>
+<p>Define classes that will be used to make the communication between the python registers
+and the VHDL code. For further information, see “A Hardware Processor for Transition-
+Edge Sensors”, Dr. Geoff Gillet &#64; <a class="reference external" href="https://espace.library.uq.edu.au/view/UQ:e039de1">https://espace.library.uq.edu.au/view/UQ:e039de1</a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="base.Detection">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">base.</span></span><span class="sig-name descname"><span class="pre">Detection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.Detection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#base.VhdlEnum" title="base.VhdlEnum"><code class="xref py py-class docutils literal notranslate"><span class="pre">base.VhdlEnum</span></code></a></p>
+<p>Value of the event.packet register.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Detection.area">
+<span class="sig-name descname"><span class="pre">area</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#base.Detection.area" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Detection.pulse">
+<span class="sig-name descname"><span class="pre">pulse</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#base.Detection.pulse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Detection.rise">
+<span class="sig-name descname"><span class="pre">rise</span></span><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#base.Detection.rise" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Detection.trace">
+<span class="sig-name descname"><span class="pre">trace</span></span><em class="property"> <span class="pre">=</span> <span class="pre">3</span></em><a class="headerlink" href="#base.Detection.trace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="base.Height">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">base.</span></span><span class="sig-name descname"><span class="pre">Height</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.Height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#base.VhdlEnum" title="base.VhdlEnum"><code class="xref py py-class docutils literal notranslate"><span class="pre">base.VhdlEnum</span></code></a></p>
+<p>Value of the event.height register.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Height.cfd_height">
+<span class="sig-name descname"><span class="pre">cfd_height</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#base.Height.cfd_height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Height.cfd_high">
+<span class="sig-name descname"><span class="pre">cfd_high</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#base.Height.cfd_high" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Height.max_slope">
+<span class="sig-name descname"><span class="pre">max_slope</span></span><em class="property"> <span class="pre">=</span> <span class="pre">3</span></em><a class="headerlink" href="#base.Height.max_slope" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Height.peak">
+<span class="sig-name descname"><span class="pre">peak</span></span><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#base.Height.peak" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="base.Payload">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">base.</span></span><span class="sig-name descname"><span class="pre">Payload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.Payload" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#base.VhdlEnum" title="base.VhdlEnum"><code class="xref py py-class docutils literal notranslate"><span class="pre">base.VhdlEnum</span></code></a></p>
+<p>Payload type in capture files.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Payload.area">
+<span class="sig-name descname"><span class="pre">area</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#base.Payload.area" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Payload.average_trace">
+<span class="sig-name descname"><span class="pre">average_trace</span></span><em class="property"> <span class="pre">=</span> <span class="pre">4</span></em><a class="headerlink" href="#base.Payload.average_trace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Payload.bad_frame">
+<span class="sig-name descname"><span class="pre">bad_frame</span></span><em class="property"> <span class="pre">=</span> <span class="pre">9</span></em><a class="headerlink" href="#base.Payload.bad_frame" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Payload.dot_product">
+<span class="sig-name descname"><span class="pre">dot_product</span></span><em class="property"> <span class="pre">=</span> <span class="pre">5</span></em><a class="headerlink" href="#base.Payload.dot_product" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Payload.dot_product_trace">
+<span class="sig-name descname"><span class="pre">dot_product_trace</span></span><em class="property"> <span class="pre">=</span> <span class="pre">6</span></em><a class="headerlink" href="#base.Payload.dot_product_trace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Payload.mca">
+<span class="sig-name descname"><span class="pre">mca</span></span><em class="property"> <span class="pre">=</span> <span class="pre">8</span></em><a class="headerlink" href="#base.Payload.mca" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Payload.pulse">
+<span class="sig-name descname"><span class="pre">pulse</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#base.Payload.pulse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Payload.rise">
+<span class="sig-name descname"><span class="pre">rise</span></span><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#base.Payload.rise" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Payload.single_trace">
+<span class="sig-name descname"><span class="pre">single_trace</span></span><em class="property"> <span class="pre">=</span> <span class="pre">3</span></em><a class="headerlink" href="#base.Payload.single_trace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Payload.tick">
+<span class="sig-name descname"><span class="pre">tick</span></span><em class="property"> <span class="pre">=</span> <span class="pre">7</span></em><a class="headerlink" href="#base.Payload.tick" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="base.Signal">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">base.</span></span><span class="sig-name descname"><span class="pre">Signal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.Signal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#base.VhdlEnum" title="base.VhdlEnum"><code class="xref py py-class docutils literal notranslate"><span class="pre">base.VhdlEnum</span></code></a></p>
+<p>The signal recorded in a trace.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Signal.f">
+<span class="sig-name descname"><span class="pre">f</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#base.Signal.f" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Signal.none">
+<span class="sig-name descname"><span class="pre">none</span></span><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#base.Signal.none" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Signal.raw">
+<span class="sig-name descname"><span class="pre">raw</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#base.Signal.raw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Signal.s">
+<span class="sig-name descname"><span class="pre">s</span></span><em class="property"> <span class="pre">=</span> <span class="pre">3</span></em><a class="headerlink" href="#base.Signal.s" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="base.Timing">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">base.</span></span><span class="sig-name descname"><span class="pre">Timing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.Timing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#base.VhdlEnum" title="base.VhdlEnum"><code class="xref py py-class docutils literal notranslate"><span class="pre">base.VhdlEnum</span></code></a></p>
+<p>Value of the event.timing register.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Timing.cfd_low">
+<span class="sig-name descname"><span class="pre">cfd_low</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#base.Timing.cfd_low" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Timing.max_slope">
+<span class="sig-name descname"><span class="pre">max_slope</span></span><em class="property"> <span class="pre">=</span> <span class="pre">3</span></em><a class="headerlink" href="#base.Timing.max_slope" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Timing.pulse_threshold">
+<span class="sig-name descname"><span class="pre">pulse_threshold</span></span><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#base.Timing.pulse_threshold" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.Timing.slope_threshold">
+<span class="sig-name descname"><span class="pre">slope_threshold</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#base.Timing.slope_threshold" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="base.TraceType">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">base.</span></span><span class="sig-name descname"><span class="pre">TraceType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.TraceType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#base.VhdlEnum" title="base.VhdlEnum"><code class="xref py py-class docutils literal notranslate"><span class="pre">base.VhdlEnum</span></code></a></p>
+<p>Value of the trace_type event.trace_type register.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.TraceType.average">
+<span class="sig-name descname"><span class="pre">average</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#base.TraceType.average" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.TraceType.dot_product">
+<span class="sig-name descname"><span class="pre">dot_product</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#base.TraceType.dot_product" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.TraceType.dot_product_trace">
+<span class="sig-name descname"><span class="pre">dot_product_trace</span></span><em class="property"> <span class="pre">=</span> <span class="pre">3</span></em><a class="headerlink" href="#base.TraceType.dot_product_trace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="base.TraceType.single">
+<span class="sig-name descname"><span class="pre">single</span></span><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#base.TraceType.single" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="base.VhdlEnum">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">base.</span></span><span class="sig-name descname"><span class="pre">VhdlEnum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.VhdlEnum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="base.VhdlEnum.latex">
+<span class="sig-name descname"><span class="pre">latex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#base.VhdlEnum.latex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="base.VhdlEnum.select">
+<span class="sig-name descname"><span class="pre">select</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#base.VhdlEnum.select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="base.lookup">
+<span class="sig-prename descclassname"><span class="pre">base.</span></span><span class="sig-name descname"><span class="pre">lookup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.lookup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="base.pulse_fmt">
+<span class="sig-prename descclassname"><span class="pre">base.</span></span><span class="sig-name descname"><span class="pre">pulse_fmt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.pulse_fmt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="base.rise2_fmt">
+<span class="sig-prename descclassname"><span class="pre">base.</span></span><span class="sig-name descname"><span class="pre">rise2_fmt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.rise2_fmt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">tespackage</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">fordocs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">base module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filesets.html">filesets module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="folder_management.html">folder_management module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maps.html">maps module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mca.html">mca module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="protocol.html">protocol module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="registers.html">registers module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">fordocs</a><ul>
+      <li>Previous: <a href="analysis.html" title="previous chapter">analysis module</a></li>
+      <li>Next: <a href="data.html" title="next chapter">data module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Leonardo Assis.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/base.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

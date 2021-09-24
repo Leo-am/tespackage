@@ -1,0 +1,7 @@
+tes\_counts module
+==================
+
+.. automodule:: tes_counts
+   :members:
+   :undoc-members:
+   :show-inheritance:

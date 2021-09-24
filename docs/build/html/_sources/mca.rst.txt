@@ -1,0 +1,7 @@
+mca module
+==========
+
+.. automodule:: mca
+   :members:
+   :undoc-members:
+   :show-inheritance:
