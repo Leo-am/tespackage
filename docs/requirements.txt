@@ -1,1 +1,11 @@
+Requirements
+------------
 
+The tes package requires: 
+
+- numpy
+- scipy
+- matplotlib
+- numba
+- yaml
+- pyserial
