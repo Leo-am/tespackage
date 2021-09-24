@@ -19,8 +19,8 @@ Contents
 
 .. toctree::
 
-   source/usage
-   source/modules
+   usage
+   modules
 
 
 Indices and tables
