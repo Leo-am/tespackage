@@ -53,6 +53,7 @@ import os
 import sys
 
 #sys.path.insert(0, os.path.abspath('/Users/leo/TES_package_and_data/Useful Jupyter Notebooks/GitHub/tespackage'))
+sys.path.insert(0, os.path.abspath('../../tes/'))
 sys.path.insert(0, os.path.abspath('_ext'))
 
 # -- Options for HTML output -------------------------------------------------
