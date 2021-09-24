@@ -5,4 +5,4 @@ build-backend = "flit_core.buildapi"
 [project]
 name = "tespackage"
 authors = [{name = "Leonardo Assis", email = "leoassisfisica@gmail.com"}]
-dynamic = ["0.2.0", "Control hardware processor for photon-number-resolving measurements."]
+dynamic = ["version", "description"]
