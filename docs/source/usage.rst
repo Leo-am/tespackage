@@ -28,3 +28,15 @@ Then, install the package using:
 .. code-block:: console
 
    python setup.py install
+
+Requirements
+------------
+
+The tes package requires: 
+
+- numpy
+- scipy
+- matplotlib
+- numba
+- yaml
+- pyserial
