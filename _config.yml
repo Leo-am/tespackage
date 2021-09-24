@@ -1,1 +1,5 @@
-theme: jekyll-theme-slate
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
