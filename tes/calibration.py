@@ -6,13 +6,13 @@ Functions to calibrate the TES detector.
 Author: Leonardo Assis Morais
 """
 
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib import patches
-from scipy import signal
-from scipy.optimize import brentq
+# import numpy as np
+# import matplotlib.pyplot as plt
+# from matplotlib import patches
+# from scipy import signal
+# from scipy.optimize import brentq
 
-import tes
+# import tes
 
 
 def maxima(function, thresh=10):
