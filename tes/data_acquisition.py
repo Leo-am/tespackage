@@ -1,10 +1,6 @@
 """
 Module used to perform measurements with the TES.
 
-Functions:
-
-1) trace_drive
-2) pulse_drive
 """
 
 import yaml
