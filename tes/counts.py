@@ -3,12 +3,12 @@ Module to assist in counting photons routine.
 
 """
 
-from collections import namedtuple
+# from collections import namedtuple
 
-import numpy as np
-import csv
-from numpy import (logical_and as and_l, logical_not as not_l)
-from numba import jit
+# import numpy as np
+# import csv
+# from numpy import (logical_and as and_l, logical_not as not_l)
+# from numba import jit
 
 
 def get_thresholds(calibration_file):
