@@ -1,6 +1,14 @@
 tes package
 ===========
 
+Module contents
+---------------
+
+.. automodule:: tes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Submodules
 ----------
 
@@ -48,14 +56,6 @@ tes.traces module
 -----------------
 
 .. automodule:: tes.traces
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Module contents
----------------
-
-.. automodule:: tes
    :members:
    :undoc-members:
    :show-inheritance:
