@@ -17,7 +17,8 @@ import mock
 sys.path.insert(0, os.path.abspath('../../'))
 sys.path.insert(0, os.path.abspath('_ext'))
 
-MOCK_MODULES = ['numpy', 'matplotlib', 'numba', 'scipy', 'lmfit', 'bokeh']
+MOCK_MODULES = ['numpy', 'matplotlib', 'numba', 'scipy', 'lmfit', 'bokeh',
+                'tes.data', 'tes.registers']
 for mod_name in MOCK_MODULES:
     sys.modules[mod_name] = mock.Mock()
 
