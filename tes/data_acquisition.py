@@ -3,10 +3,10 @@ Module used to perform measurements with the TES.
 
 """
 
-import yaml
+# import yaml
 
-from tes.registers import Registers
-from tes.data import capture
+# from tes.registers import Registers
+# from tes.data import capture
 
 
 def trace_drive(time, channel, p_thres, s_thres,
