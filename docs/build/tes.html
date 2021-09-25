@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tes package &mdash; tespackage 0.2.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="tes" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> tespackage
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tes</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">tes package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tes.calibration">tes.calibration module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tes.counts">tes.counts module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tes.data_acquisition">tes.data_acquisition module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tes.folder_management">tes.folder_management module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tes.mca_control">tes.mca_control module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tes.traces">tes.traces module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tes">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tespackage</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">tes</a> &raquo;</li>
+      <li>tes package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tes.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tes-package">
+<h1>tes package<a class="headerlink" href="#tes-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-tes.calibration">
+<span id="tes-calibration-module"></span><h2>tes.calibration module<a class="headerlink" href="#module-tes.calibration" title="Permalink to this headline"></a></h2>
+<p>Functions to calibrate the TES detector.</p>
+<p>Author: Leonardo Assis Morais</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.calibration.area_histogram">
+<span class="sig-prename descclassname"><span class="pre">tes.calibration.</span></span><span class="sig-name descname"><span class="pre">area_histogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_area</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">areas</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.calibration.area_histogram" title="Permalink to this definition"></a></dt>
+<dd><p>Create an area histogram.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>max_area</strong> (<em>float</em>) – <dl class="simple">
+<dt>Maximum area allowed (remove extremely large areas not due to</dt><dd><p>photon detections).</p>
+</dd>
+</dl>
+</p></li>
+<li><p><strong>bin_number</strong> (<em>int</em>) – Number of histogram bins.</p></li>
+<li><p><strong>areas</strong> (<em>np.ndarray</em>) – Data with areas of TES pulses.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>bin_centre</strong> (<em>np.darray</em>) – Array with the positions of the histograms bin centres.
+Used for plotting the histogram with correct values
+for areas in the x-axis.</p></li>
+<li><p><strong>counts</strong> (<em>np.ndarray</em>) – Histogram counts.</p></li>
+<li><p><strong>error</strong> (<em>np.ndarray</em>) – Standard deviation for counts
+(poissonian distribution assumed: std. = sqrt(counts).</p></li>
+<li><p><strong>bin_width</strong> (<em>float</em>) – Bin width for plotting.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.calibration.find_thresholds">
+<span class="sig-prename descclassname"><span class="pre">tes.calibration.</span></span><span class="sig-name descname"><span class="pre">find_thresholds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gauss_fit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxima_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_centre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">counts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">const</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.calibration.find_thresholds" title="Permalink to this definition"></a></dt>
+<dd><p>Find the counting thresholds given a gaussian fit.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gauss_fit</strong> (<em>lmfit fit</em>) – Result of a least square minimisation using lmfit.</p></li>
+<li><p><strong>maxima_list</strong> (<em>np.ndarray</em>) – Array with the positions of maxima points.</p></li>
+<li><p><strong>bin_centre</strong> (<em>np.ndarray</em>) – Array with centre bin positions for histogram.</p></li>
+<li><p><strong>counts</strong> (<em>np.ndarray</em>) – List with counts for histogram.</p></li>
+<li><p><strong>const</strong> (<em>float</em>) – Value used for scipy.optimise.brentq.
+See ‘Notes’ below for more information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>dist</strong> (<em>list</em>) – List with the normalised distributions.</p></li>
+<li><p><em>new_thresh_list</em> – List of counting thresholds.</p></li>
+<li><p><em>Requires</em></p></li>
+<li><p><em>——–</em> – scipy.optimize.brentq</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Sometimes this function breaks if brentq function cannot find
+roots. If that is the case, slowly increase the value of the
+variable ‘const’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.calibration.gaussian_model">
+<span class="sig-prename descclassname"><span class="pre">tes.calibration.</span></span><span class="sig-name descname"><span class="pre">gaussian_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fitting</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">counts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_centre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.calibration.gaussian_model" title="Permalink to this definition"></a></dt>
+<dd><p>Implement mixture model comprised of gaussians.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fitting</strong> (<em>class lmfit.minimizer.MinimizerResult</em>) – Result from fitting using lmfit.</p></li>
+<li><p><strong>counts</strong> (<em>np.ndarray</em>) – Histogram counts.</p></li>
+<li><p><strong>bin_centre</strong> (<em>np.darray</em>) – Array with the positions of the histograms bin centres.
+Used for plotting the histogram with correct values
+for areas in the x-axis.</p></li>
+<li><p><strong>max_idx</strong> (<em>int</em>) – Number of gaussian distributions used in the model.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>model</strong> – Model of composed of sum of gaussians using the results
+obtained from the fitting with lmfit.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.calibration.guess_histogram">
+<span class="sig-prename descclassname"><span class="pre">tes.calibration.</span></span><span class="sig-name descname"><span class="pre">guess_histogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">areas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_area</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.calibration.guess_histogram" title="Permalink to this definition"></a></dt>
+<dd><p>Create first guess for histogram fitting.</p>
+<p>Using a Hann function to create an approximate fit for the
+data, estimates the position for the centre of the different
+peaks in the area histogram.</p>
+<p>WARNING:
+The Hann window fitting must be checked to see if
+it is reasonable using the function plot_guess.</p>
+<blockquote>
+<div><p>maxima</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bin_number</strong> (<em>int</em>) – Number of bins used in histogram.</p></li>
+<li><p><strong>win_length</strong> (<em>int</em>) – Length of the Hann window used in the fit.</p></li>
+<li><p><strong>minimum</strong> (<em>int</em>) – Minimum value for the function maxima to consider
+a given number of counts as a peak.</p></li>
+<li><p><strong>max_area</strong> (<em>float</em>) – Areas &gt; max_area are considered invalid counts and
+removed from the analysis. Used to remove event with
+anomalous areas.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>counts</strong> (<em>np.darray</em>) – Array with counts for each histogram bin.</p></li>
+<li><p><strong>smooth_hist</strong> (<em>np.darray</em>) – Array with the continuous fit used to determine
+the positions of the maxima in the data.</p></li>
+<li><p><strong>bin_centre</strong> (<em>np.darray</em>) – Array with the positions of the histograms bin centres.
+Used for plotting the histogram with correct values
+for areas in the x-axis.</p></li>
+<li><p><strong>max_i</strong> (<em>list</em>) – List with the position of the maxima points.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.calibration.maxima">
+<span class="sig-prename descclassname"><span class="pre">tes.calibration.</span></span><span class="sig-name descname"><span class="pre">maxima</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.calibration.maxima" title="Permalink to this definition"></a></dt>
+<dd><p>Find local maxima of a function f.</p>
+<p>Uses rising zero crossings of the gradient of f to find function
+local maxima.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>function</strong> (<em>ndarray</em>) – Function f to be analysed.</p></li>
+<li><p><strong>thresh</strong> (<em>int</em>) – Only return a maxima if f[maxima] &gt; thresh.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>array</em></p></li>
+<li><p><em>Array with maxima points of f.</em></p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.calibration.plot_area">
+<span class="sig-prename descclassname"><span class="pre">tes.calibration.</span></span><span class="sig-name descname"><span class="pre">plot_area</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_centre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">counts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_steps</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.calibration.plot_area" title="Permalink to this definition"></a></dt>
+<dd><p>Require area_histogram to be run before.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ax</strong> (<em>figure axis</em>) – Figure axis of the figure to be plotted.</p></li>
+<li><p><strong>bin_centre</strong> (<em>np.darray</em>) – Array with the positions of the histograms bin centres.
+Used for plotting the histogram with correct values
+for areas in the x-axis.</p></li>
+<li><p><strong>counts</strong> (<em>np.ndarray</em>) – Histogram counts.</p></li>
+<li><p><strong>error</strong> (<em>np.ndarray</em>) – Standard deviation for counts</p></li>
+<li><p><strong>model</strong> (<em>np.ndarray</em>) – Model generated with gaussian_model</p></li>
+<li><p><strong>plot_steps</strong> (<em>int</em>) – Number of histogram points to be skipped when plotting.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>None.</em></p></li>
+<li><p><em>Requires</em></p></li>
+<li><p><em>——–</em></p></li>
+<li><p><em>area_histogram</em></p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.calibration.plot_guess">
+<span class="sig-prename descclassname"><span class="pre">tes.calibration.</span></span><span class="sig-name descname"><span class="pre">plot_guess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth_hist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_centres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_i</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.calibration.plot_guess" title="Permalink to this definition"></a></dt>
+<dd><p>Plot the histogram with an educated guess for its fitting.</p>
+<p>Visual check if the maxima positions determined by the
+guess_thresholds are reasonable.</p>
+<p>Requires guess_thresholds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ax</strong> (<em>figure axis</em>) – Figure axis of the figure to be plotted.</p></li>
+<li><p><strong>hist</strong> (<em>np.darray</em>) – Histogram obtained from the guess_thresholds function.</p></li>
+<li><p><strong>smooth_hist</strong> – Smoothed histogram obtained from the guess_thresholds
+function.</p></li>
+<li><p><strong>bin_centres</strong> – Centre of the bins for the histogram. Obtained from the
+guess_thresholds function.</p></li>
+<li><p><strong>max_i</strong> (<em>list</em>) – List with the position of the maxima points for the
+peaks in histogram. Obtained from the guess_thresholds
+function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>ax</strong> – Axis for the figure with the histogram, smoothed histogram
+and maxima points plotted.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>figure axis</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.calibration.plot_histogram">
+<span class="sig-prename descclassname"><span class="pre">tes.calibration.</span></span><span class="sig-name descname"><span class="pre">plot_histogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.calibration.plot_histogram" title="Permalink to this definition"></a></dt>
+<dd><p>Plot histogram of TES characteristics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ax</strong> (<em>figure axis</em>) – Figure axis of the figure to be plotted.</p></li>
+<li><p><strong>data</strong> (<em>np.ndarray</em>) – Data extracted from TES (height, area, length, maximum slope).</p></li>
+<li><p><strong>bin_number</strong> (<em>int</em>) – Number of histogram bins.</p></li>
+<li><p><strong>measurement</strong> (<em>str</em>) – Type of measurement plotted.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.calibration.plot_normalised">
+<span class="sig-prename descclassname"><span class="pre">tes.calibration.</span></span><span class="sig-name descname"><span class="pre">plot_normalised</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_centre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.calibration.plot_normalised" title="Permalink to this definition"></a></dt>
+<dd><p>Plot the graph with the normalised distributions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ax</strong> (<em>figure axis</em>) – Figure axis of the figure to be plotted.</p></li>
+<li><p><strong>max_i</strong> (<em>np.ndarray</em>) – Number of distributions to be plotted.</p></li>
+<li><p><strong>bin_centre</strong> (<em>np.ndarray</em>) – x-axis positions for histogram data.</p></li>
+<li><p><strong>dist</strong> (<em>np.ndarray</em>) – Distributions to be plotted.</p></li>
+<li><p><strong>thresholds</strong> (<em>np.ndarray</em>) – Counting thresholds positions to be plotted.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.calibration.residual_gauss">
+<span class="sig-prename descclassname"><span class="pre">tes.calibration.</span></span><span class="sig-name descname"><span class="pre">residual_gauss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i_var</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.calibration.residual_gauss" title="Permalink to this definition"></a></dt>
+<dd><p>Gaussian model to fit histogram from TES detections.</p>
+<p>Model composed of a sum of N gaussian distributions, to be used
+with the lmfit package to fit histograms from TES detections.
+Returns the residual between data and model, divided by the
+error in the data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>params</strong> (<em>lmfit object</em>) – List of parameters to be used in the fit.</p></li>
+<li><p><strong>i_var</strong> – Independent variable to be used in the fit.</p></li>
+<li><p><strong>data</strong> (<em>np.ndarray</em>) – Data to be fitted.</p></li>
+<li><p><strong>eps_data</strong> (<em>np.ndarray</em>) – Standard deviation of each data point.</p></li>
+<li><p><strong>max_idx</strong> (<em>int</em>) – Number of gaussian distributions used in the model.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>residual</strong> – Array with the different between data and model
+divided by the error in data.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tes.counts">
+<span id="tes-counts-module"></span><h2>tes.counts module<a class="headerlink" href="#module-tes.counts" title="Permalink to this headline"></a></h2>
+<p>Module to assist in counting photons routine.</p>
+<p>1) coincidence
+3) window</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tes.counts.Counts">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">tes.counts.</span></span><span class="sig-name descname"><span class="pre">Counts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">count</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uncorrelated</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacuum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.counts.Counts" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="tes.counts.Counts.count">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">count</span></span><a class="headerlink" href="#tes.counts.Counts.count" title="Permalink to this definition"></a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tes.counts.Counts.uncorrelated">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">uncorrelated</span></span><a class="headerlink" href="#tes.counts.Counts.uncorrelated" title="Permalink to this definition"></a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tes.counts.Counts.vacuum">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">vacuum</span></span><a class="headerlink" href="#tes.counts.Counts.vacuum" title="Permalink to this definition"></a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.counts.coincidence">
+<span class="sig-prename descclassname"><span class="pre">tes.counts.</span></span><span class="sig-name descname"><span class="pre">coincidence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">abs_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.counts.coincidence" title="Permalink to this definition"></a></dt>
+<dd><p>Find coincidences between two channels.</p>
+<p>After finding a coincidence, return indices of coincident events.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>abs_time</strong> (<em>ndarray</em>) – Array where each entry corresponds to the time which the
+detection was performed with respect to an initial time t0.
+This array can be constructed using
+np.cumsum(CaptureData(datapath).times).</p></li>
+<li><p><strong>mask</strong> (<em>ndarray bool</em>) – Identifies the channels in abs_time.
+For abs_times where mask is False, time t is coincident if
+abs_time+low &lt;= t &lt;= abs_time+high.
+If the mask is True t is coincident if
+abs_time-high &lt;= t &lt;= abs_time-low.</p></li>
+<li><p><strong>low</strong> (<em>float</em>) – The starting of the coincidence window.</p></li>
+<li><p><strong>high</strong> (<em>float</em>) – The ending side of the coincidence window.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul>
+<li><p><strong>coincidences(coinc, coinc_mask)</strong> (<em>tuple</em>) –</p>
+<dl class="simple">
+<dt>coinc<span class="classifier">ndarray</span></dt><dd><p>Indexes of the coincident event in the other channel.
+When more than one event is found in the window the negated
+value of the first index is entered.</p>
+</dd>
+<dt>coinc_mask<span class="classifier">ndarray bool</span></dt><dd><p>Indicates where exactly one event was found in the window.</p>
+</dd>
+</dl>
+</li>
+<li><p><em>Requires</em></p></li>
+<li><p><em>———</em> – tes.counts.window</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.counts.counting_photons">
+<span class="sig-prename descclassname"><span class="pre">tes.counts.</span></span><span class="sig-name descname"><span class="pre">counting_photons</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresh_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacuum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coinc_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">herald_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.counts.counting_photons" title="Permalink to this definition"></a></dt>
+<dd><p>Convert TES pulse area in photon-number.</p>
+<p>Given an TES pulse area data set and the calibration (list with the
+counting thresholds, passed through thresh_list), returns
+the number of counts for each Fock state.</p>
+<p>If the mask with the heralding source is given, also includes
+the number of vacuum counts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>np.ndarray</em>) – Measured data.</p></li>
+<li><p><strong>thresh_list</strong> (<em>np.ndarray</em>) – List with the counting thresholds obtained after detector
+calibration.</p></li>
+<li><p><strong>vacuum</strong> (<em>bool</em>) – If true, it will use the herald_mask to calculate vacuum
+counts</p></li>
+<li><p><strong>coinc_mask</strong> (<em>ndarray</em><em>, </em><em>bool</em>) – Mask indicating coincidence counts.</p></li>
+<li><p><strong>herald_mask</strong> (<em>ndarray</em><em>, </em><em>bool</em>) – Mask indicating which events are in the heralding channel.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p><strong>Counts(count, uncorrelated, vacuum)</strong> –</p>
+<dl class="simple">
+<dt>count<span class="classifier">ndarray</span></dt><dd><p>Counts for each photon number</p>
+</dd>
+<dt>uncorrelated :</dt><dd><p>Counts events not correlated with herald.
+Only calculated when coinc_mask and herald_mask are
+provided.</p>
+</dd>
+<dt>vacuum :</dt><dd><p>indicates if count[0] contains vacuum counts</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>named tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.counts.get_thresholds">
+<span class="sig-prename descclassname"><span class="pre">tes.counts.</span></span><span class="sig-name descname"><span class="pre">get_thresholds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">calibration_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.counts.get_thresholds" title="Permalink to this definition"></a></dt>
+<dd><p>Load the threshold from a calibration file.</p>
+<p>Calibration file must be generated with “TES_Calibration.ipynb”.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>calibration_file</strong> (<em>str</em>) – Calibration file path.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>thresholds</strong> – Array with the threshold positions.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.counts.window">
+<span class="sig-prename descclassname"><span class="pre">tes.counts.</span></span><span class="sig-name descname"><span class="pre">window</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ind</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">abs_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.counts.window" title="Permalink to this definition"></a></dt>
+<dd><p>Find coincident events in the given window.</p>
+<p>Get offsets from the current index ind in abs_time that are in the
+relative time window defined by low and high.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ind</strong> (<em>int</em>) – Current index for abs_time.</p></li>
+<li><p><strong>abs_time</strong> (<em>ndarray</em>) – Absolute times.</p></li>
+<li><p><strong>low</strong> (<em>float</em>) – Starting point of the relative window.</p></li>
+<li><p><strong>high</strong> (<em>float</em>) – Ending point of the relative window.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>(low_index, high_index)</strong> – coincident times are abs_time[low_index:ind+high_index]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tes.data_acquisition">
+<span id="tes-data-acquisition-module"></span><h2>tes.data_acquisition module<a class="headerlink" href="#module-tes.data_acquisition" title="Permalink to this headline"></a></h2>
+<p>Module used to perform measurements with the TES.</p>
+<p>Functions:</p>
+<ol class="arabic simple">
+<li><p>trace_drive</p></li>
+<li><p>pulse_drive</p></li>
+</ol>
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.data_acquisition.pulse_drive">
+<span class="sig-prename descclassname"><span class="pre">tes.data_acquisition.</span></span><span class="sig-name descname"><span class="pre">pulse_drive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_thres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s_thres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baseline_sub</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datapath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.data_acquisition.pulse_drive" title="Permalink to this definition"></a></dt>
+<dd><p>Perform measurements over TES traces.</p>
+<dl class="simple">
+<dt>Measure the following characteristics of TES traces:</dt><dd><ol class="arabic simple">
+<li><p>Length</p></li>
+<li><p>Area</p></li>
+<li><p>Maximum slope or height</p></li>
+<li><p>Rise Time</p></li>
+</ol>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>time</strong> (<em>int</em>) – Time in seconds to take measurements.</p></li>
+<li><p><strong>channel</strong> (<em>int</em>) – Processing channel chosen to take measurements.</p></li>
+<li><p><strong>p_thres</strong> (<em>int</em>) – Pulse threshold chosen using the MCA.</p></li>
+<li><p><strong>s_thres</strong> (<em>int</em>) – Slope threshold chosen using the MCA.</p></li>
+<li><p><strong>base_sub</strong> (<em>bool</em>) – If True, the baseline correction will be activated.
+It can automatically update the baseline level in
+the case where it changes.</p></li>
+<li><p><strong>datapath</strong> (<em>str</em>) – Folder where the registers will be saved.</p></li>
+<li><p><strong>filename</strong> (<em>str</em>) – Name of the file where the registers will be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.data_acquisition.trace_drive">
+<span class="sig-prename descclassname"><span class="pre">tes.data_acquisition.</span></span><span class="sig-name descname"><span class="pre">trace_drive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_thres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s_thres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baseline_sub</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datapath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.data_acquisition.trace_drive" title="Permalink to this definition"></a></dt>
+<dd><p>Record TES traces.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>time</strong> (<em>int</em>) – Time in seconds to take measurements.</p></li>
+<li><p><strong>channel</strong> (<em>int</em>) – Processing channel chosen to take measurements.</p></li>
+<li><p><strong>p_thres</strong> (<em>int</em>) – Pulse threshold chosen using the MCA.</p></li>
+<li><p><strong>s_thres</strong> (<em>int</em>) – Slope threshold chosen using the MCA.</p></li>
+<li><p><strong>base_sub</strong> (<em>bool</em>) – If True, the baseline correction will be activated.
+It can automatically update the baseline level in
+the case where it changes.</p></li>
+<li><p><strong>datapath</strong> (<em>str</em>) – Folder where the registers will be saved.</p></li>
+<li><p><strong>filename</strong> (<em>str</em>) – Name of the file where the registers will be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Keep your trace measurements up to 1 minute.</p>
+</dd></dl>
+
+</section>
+<section id="module-tes.folder_management">
+<span id="tes-folder-management-module"></span><h2>tes.folder_management module<a class="headerlink" href="#module-tes.folder_management" title="Permalink to this headline"></a></h2>
+<p>Module with convenient functions for folder management.</p>
+<p>Contains
+1) find_folders
+2) manage_folders</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.folder_management.find_folders">
+<span class="sig-prename descclassname"><span class="pre">tes.folder_management.</span></span><span class="sig-name descname"><span class="pre">find_folders</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">master_folder</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.folder_management.find_folders" title="Permalink to this definition"></a></dt>
+<dd><p>Search for folders inside the given address.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>master_folder</strong> (<em>string</em>) – address of the master folder on local computer.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>AttributeError:</strong> – Raises error when no folder can be found.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>measurements</strong> – list with the address of folders inside master_folder.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.folder_management.manage_folders">
+<span class="sig-prename descclassname"><span class="pre">tes.folder_management.</span></span><span class="sig-name descname"><span class="pre">manage_folders</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement_folders</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.folder_management.manage_folders" title="Permalink to this definition"></a></dt>
+<dd><p>Create a folder structure for a given measurement set.</p>
+<p>Structure as follows:
+Measurement Folder ——&gt; Analysis Folder</p>
+<blockquote>
+<div><p><a href="#id1"><span class="problematic" id="id2">|</span></a>—–&gt; Figures Folder</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>integer</em>) – Select the measurement folder to be analysed</p></li>
+<li><p><strong>measurements</strong> (<em>list</em>) – contains all addresses of measurement folders</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>AttributeError:</strong> – Raises error when no folder can be found.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>datapath<span class="classifier">path</span></dt><dd><p>address of the measurement folder</p>
+</dd>
+<dt>folder_analysis<span class="classifier">path</span></dt><dd><p>address of the analysis folder</p>
+</dd>
+<dt>folder_figures<span class="classifier">path</span></dt><dd><p>address of the figures folder</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>tuple with</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tes.mca_control">
+<span id="tes-mca-control-module"></span><h2>tes.mca_control module<a class="headerlink" href="#module-tes.mca_control" title="Permalink to this headline"></a></h2>
+<p>Module with functions to control the MCA.</p>
+<p>Should be used together with the Jupyter Notebook
+“MCA_and_Measurements.ipynb”.</p>
+<p>Functions defined here:</p>
+<ol class="arabic simple">
+<li><p>configure_channels</p></li>
+<li><p>baseline_offset</p></li>
+<li><p>pulse_threshold</p></li>
+<li><p>slope_threshold</p></li>
+<li><p>area_histogram</p></li>
+</ol>
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.mca_control.area_histogram">
+<span class="sig-prename descclassname"><span class="pre">tes.mca_control.</span></span><span class="sig-name descname"><span class="pre">area_histogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_thres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s_thres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xrange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yrange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.mca_control.area_histogram" title="Permalink to this definition"></a></dt>
+<dd><p>Plot area histogram given the thresholds chosen.</p>
+<p>Always run this function to realise a sanity test for the selected
+values for baseline offset, pulse threshold and slope
+threshold.
+You should be able to see clear distinct peaks indicating that
+the current configuration of the TES can discriminate number of
+photons.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>registers</strong> (<em>dict</em>) – Dictionary that stores the values of all registers that control
+the measurements performed by the FPGA.</p></li>
+<li><p><strong>time</strong> (<em>int</em>) – Time (in seconds) the histogram should be accumulated over.</p></li>
+<li><p><strong>channel</strong> (<em>int</em>) – Channel to be analysed.</p></li>
+<li><p><strong>bin_width</strong> (<em>int</em>) – 2^(bin_width) will be the width of the histogram bin.</p></li>
+<li><p><strong>s_thres</strong> (<em>int</em>) – Determine the pulse threshold.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>(fig,)</strong> – Figure with the plotted histogram.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.mca_control.baseline_offset">
+<span class="sig-prename descclassname"><span class="pre">tes.mca_control.</span></span><span class="sig-name descname"><span class="pre">baseline_offset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baseline_offset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.mca_control.baseline_offset" title="Permalink to this definition"></a></dt>
+<dd><p>Determine the detection baseline for TES detections.</p>
+<p>Change the values of baseline_offset until you see a big peak
+in the  histogram. When the peak appears, put its centre at
+x = 0 by choosing an  appropriate baseline_offset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>registers</strong> (<em>dict</em>) – Dictionary that stores the values of all registers that
+control the measurements performed by the FPGA.</p></li>
+<li><p><strong>time</strong> (<em>int</em>) – Time (in seconds) the histogram should be accumulated over.</p></li>
+<li><p><strong>channel</strong> (<em>int</em>) – Channel to be analysed.</p></li>
+<li><p><strong>bin_width</strong> (<em>int</em>) – 2^(bin_width) will be the width of the histogram bin</p></li>
+<li><p><strong>baseline_offset</strong> (<em>int</em>) – Determine the baseline offset.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>(fig,)</strong> – Figure with the plotted histogram.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.mca_control.configure_channels">
+<span class="sig-prename descclassname"><span class="pre">tes.mca_control.</span></span><span class="sig-name descname"><span class="pre">configure_channels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adc_channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proc_channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invert</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.mca_control.configure_channels" title="Permalink to this definition"></a></dt>
+<dd><p>Configure connections to ADC channels.</p>
+<p>Connects the selected ADC channel (check in the lab to which
+ADC channel you connected the TES cables) to the selected
+processing channel (digital channel to which you will refer
+in the next steps of the notebook).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>registers</strong> (<em>dict</em>) – Dictionary that stores the values of all registers that control
+the measurements performed by the FPGA.</p></li>
+<li><p><strong>adc_channel</strong> (<em>int</em>) – Determine which adc channel is being used.
+May assume values 0-7.</p></li>
+<li><p><strong>proc_channel</strong> (<em>int</em>) – Determine which processing channel is being used.
+May assume values 0-1.</p></li>
+<li><p><strong>invert</strong> (<em>bool</em>) – Determines if the signal polarisation should be inverted.
+True inverts, False does not invert.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.mca_control.pulse_threshold">
+<span class="sig-prename descclassname"><span class="pre">tes.mca_control.</span></span><span class="sig-name descname"><span class="pre">pulse_threshold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_thres</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.mca_control.pulse_threshold" title="Permalink to this definition"></a></dt>
+<dd><p>Determine the pulse threshold.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>registers</strong> (<em>dict</em>) – Dictionary that stores the values of all registers that control
+the measurements performed by the FPGA.</p></li>
+<li><p><strong>time</strong> (<em>int</em>) – Time (in seconds) the histogram should be accumulated over.</p></li>
+<li><p><strong>channel</strong> (<em>int</em>) – Channel to be analysed.</p></li>
+<li><p><strong>bin_width</strong> (<em>int</em>) – 2^(bin_width) will be the width of the histogram bin.</p></li>
+<li><p><strong>pulse_threshold</strong> (<em>int</em>) – Determine the pulse threshold.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>(fig,)</strong> – Figure with the plotted histogram.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.mca_control.slope_threshold">
+<span class="sig-prename descclassname"><span class="pre">tes.mca_control.</span></span><span class="sig-name descname"><span class="pre">slope_threshold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bin_width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s_thres</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.mca_control.slope_threshold" title="Permalink to this definition"></a></dt>
+<dd><p>Determine the slope threshold.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>registers</strong> (<em>dict</em>) – Dictionary that stores the values of all registers that control
+the measurements performed by the FPGA.</p></li>
+<li><p><strong>time</strong> (<em>int</em>) – Time (in seconds) the histogram should be accumulated over.</p></li>
+<li><p><strong>channel</strong> (<em>in</em>) – Channel to be analysed.</p></li>
+<li><p><strong>bin_width</strong> (<em>int</em>) – 2^(bin_width) will be the width of the histogram bin.</p></li>
+<li><p><strong>s_thres</strong> (<em>int</em>) – Determine the pulse threshold.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>(fig,)</strong> – Figure with the plotted histogram.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tes.traces">
+<span id="tes-traces-module"></span><h2>tes.traces module<a class="headerlink" href="#module-tes.traces" title="Permalink to this headline"></a></h2>
+<p>Module to be used with jupyter notebook TES Trace Generator.</p>
+<p>Contains:</p>
+<ol class="arabic simple">
+<li><p>extract_data</p></li>
+<li><p>create_statistics_file</p></li>
+<li><p>plot_traces</p></li>
+<li><p>correct_xticks</p></li>
+<li><p>correct_yticks</p></li>
+</ol>
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.traces.correct_xticks">
+<span class="sig-prename descclassname"><span class="pre">tes.traces.</span></span><span class="sig-name descname"><span class="pre">correct_xticks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.traces.correct_xticks" title="Permalink to this definition"></a></dt>
+<dd><p>Properly edit the xticks for a matplotlib plot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ax</strong> (<em>axis object</em>) – Axis with x-axis to be edited.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>ax</strong> (<em>axis object</em>) – Edited axis object.</p></li>
+<li><p><strong>expx</strong> (<em>int</em>) – Integer to be added to the x-axis label.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.traces.correct_yticks">
+<span class="sig-prename descclassname"><span class="pre">tes.traces.</span></span><span class="sig-name descname"><span class="pre">correct_yticks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.traces.correct_yticks" title="Permalink to this definition"></a></dt>
+<dd><p>Properly edit the yticks for a matplotlib plot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ax</strong> (<em>axis object</em>) – Axis with x-axis to be edited.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>ax</strong> (<em>axis object</em>) – Edited axis object.</p></li>
+<li><p><strong>expy</strong> (<em>int</em>) – Integer to be added to the x-axis label.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.traces.create_statistics_file">
+<span class="sig-prename descclassname"><span class="pre">tes.traces.</span></span><span class="sig-name descname"><span class="pre">create_statistics_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement_folders</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.traces.create_statistics_file" title="Permalink to this definition"></a></dt>
+<dd><p>Create file with measurements statistics in measurement folder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>measurement_folder</strong> (<em>list of paths</em>) – list containing the paths of the folders where the measurements
+are stored and where the stats files will be created.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.traces.extract_data">
+<span class="sig-prename descclassname"><span class="pre">tes.traces.</span></span><span class="sig-name descname"><span class="pre">extract_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datapath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurements</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.traces.extract_data" title="Permalink to this definition"></a></dt>
+<dd><p>Extract data and registers for a given address.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>datapath</strong> (<em>str</em>) – String containing the measurement folder address.</p></li>
+<li><p><strong>measurements</strong> (<em>list of paths</em>) – List with the paths of all measurement folders.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>data</strong> (<em>tes.data.CaptureData</em>) – Contains the data to be plotted.</p></li>
+<li><p><strong>registers</strong> (<em>TYPE</em>) – Contains the information required to plot timing information
+properly.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tes.traces.plot_traces">
+<span class="sig-prename descclassname"><span class="pre">tes.traces.</span></span><span class="sig-name descname"><span class="pre">plot_traces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_traces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trace_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_register</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">choose_trace</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tes.traces.plot_traces" title="Permalink to this definition"></a></dt>
+<dd><p>Plot traces using collected using the FPGA.</p>
+<dl class="simple">
+<dt>Can plot:</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>a single trace (number_traces = 1, slope = False,</dt><dd><p>details = False)</p>
+</dd>
+</dl>
+</li>
+<li><p>many traces (number_traces &gt; 1)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>tes.data.CaptureData</em>) – Contains the data to be plotted.</p></li>
+<li><p><strong>number_traces</strong> (<em>int</em>) – The number of different TES pulses to be plotted.</p></li>
+<li><p><strong>trace_length</strong> (<em>int</em>) – The number of points in each TES pulse.</p></li>
+<li><p><strong>time_register</strong> (<em>dict</em>) – Contains the time information for the pulses.</p></li>
+<li><p><strong>choose_trace</strong> (<em>int</em>) – Choose a single TES pulse to plot.
+(if number_traces == 1)</p></li>
+<li><p><strong>ax</strong> (<em>matplotlib.axis</em>) – Figure axis where traces will be plotted.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tes">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tes" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="tes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Leonardo Assis.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
