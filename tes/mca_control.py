@@ -5,13 +5,13 @@ Should be used together with the Jupyter Notebook
 "MCA_and_Measurements.ipynb".
 
 """
-from time import sleep
+# from time import sleep
 
-import numpy as np
-import bokeh
-from bokeh.plotting import figure
+# import numpy as np
+# import bokeh
+# from bokeh.plotting import figure
 
-from tes.data import read_mca
+# from tes.data import read_mca
 
 
 def configure_channels(registers, adc_channel, proc_channel, invert):
