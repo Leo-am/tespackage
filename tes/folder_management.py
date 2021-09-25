@@ -1,10 +1,6 @@
 """
 Module with convenient functions for folder management.
 
-Contains
-1) find_folders
-2) manage_folders
-
 """
 import os
 from pathlib import Path
