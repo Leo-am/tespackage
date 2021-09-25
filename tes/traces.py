@@ -2,13 +2,13 @@
 
 """
 
-from pathlib import Path
+# from pathlib import Path
 
-import numpy as np
-import matplotlib.pyplot as plt
+# import numpy as np
+# import matplotlib.pyplot as plt
 
-from tes.data import CaptureData
-from tes.registers import load
+# from tes.data import CaptureData
+# from tes.registers import load
 
 
 def extract_data(datapath, measurements):
