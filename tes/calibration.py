@@ -12,7 +12,7 @@ from matplotlib import patches
 from scipy import signal
 from scipy.optimize import brentq
 
-from tes.traces import correct_xticks, correct_yticks
+import tes
 
 
 def maxima(function, thresh=10):
@@ -108,7 +108,7 @@ def plot_guess(ax, hist, smooth_hist, bin_centres, max_i):
         markersize=8
     )
 
-    expx = correct_xticks(ax)
+    expx = tes.traces.correct_xticks(ax)
     ax.set_ylabel(r"Counts")
     ax.set_xlabel(r"TES Pulse Areas (Arb. Un.) $(\times 10^{{ {:.0f} }})$"
                   .format(expx))
@@ -337,7 +337,7 @@ def plot_area(ax, bin_centre, counts, error, model, plot_steps):
         markeredgewidth=2,
     )
     ax.plot(bin_centre, model, "--r", zorder=2, lw=2.5)
-    expx = correct_xticks(ax)
+    expx = tes.traces.correct_xticks(ax)
     ax.set_xlabel(
         r"Pulse {} $(\times 10^{{ {:.0f} }})$ (arb. un.)".format("Area", expx)
     )
@@ -442,8 +442,8 @@ def plot_histogram(ax, data, bin_number, measurement):
     ax.plot(bin_centre, hist,
             's', markersize=4, markerfacecolor='k', mew=0.5, color='k')
 
-    exp_x = correct_xticks(ax)
-    exp_y = correct_yticks(ax)
+    exp_x = tes.traces.correct_xticks(ax)
+    exp_y = tes.traces.correct_yticks(ax)
 
     ax.set_xlabel(r'Pulse {} $(\times 10^{})$ (arb. un.)'
                   .format(measurement, {exp_x}))
@@ -661,8 +661,8 @@ def plot_normalised(ax, max_i, bin_centre, dist, thresholds):
             color=colors[(MAX_PLOT-1) % COLOR_NUM])
 
     # axis ticks
-    expy = correct_yticks(ax)
-    expx = correct_xticks(ax)
+    expy = tes.traces.correct_yticks(ax)
+    expx = tes.traces.correct_xticks(ax)
 
     ax.set_ylabel(r'Normalised Distributions $(\times 10^{{ {} }})$'
                   .format(expy))
