@@ -4,19 +4,10 @@ Module with functions to control the MCA.
 Should be used together with the Jupyter Notebook
 "MCA_and_Measurements.ipynb".
 
-Functions defined here:
-
-1) configure_channels
-2) baseline_offset
-3) pulse_threshold
-4) slope_threshold
-5) area_histogram
-
 """
-
-import numpy as np
 from time import sleep
 
+import numpy as np
 import bokeh
 from bokeh.plotting import figure
 
