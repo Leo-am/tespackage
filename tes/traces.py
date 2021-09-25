@@ -1,13 +1,5 @@
 """Module to be used with jupyter notebook TES Trace Generator.
 
-Contains:
-
-1) extract_data
-2) create_statistics_file
-3) plot_traces
-4) correct_xticks
-5) correct_yticks
-
 """
 
 from pathlib import Path
