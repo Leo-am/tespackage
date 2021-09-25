@@ -12,9 +12,14 @@
 #
 import os
 import sys
+import mock
 
 sys.path.insert(0, os.path.abspath('../../tes/'))
 sys.path.insert(0, os.path.abspath('_ext'))
+
+MOCK_MODULES = ['numpy', 'matplotlib', 'numba', 'scipy', 'lmfit', 'bokeh']
+for mod_name in MOCK_MODULES:
+    sys.modules[mod_name] = mock.Mock()
 
 
 # -- Project information -----------------------------------------------------
@@ -63,8 +68,6 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 
-import mock
+
  
-MOCK_MODULES = ['numpy', 'matplotlib', 'numba', 'scipy', 'lmfit', 'bokeh']
-for mod_name in MOCK_MODULES:
-    sys.modules[mod_name] = mock.Mock()
+
