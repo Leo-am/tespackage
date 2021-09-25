@@ -1,7 +1,0 @@
-site_name: tes package
-site_url: https://leo-am.github.io/tespackage/
-site_author: Leonardo Assis Morais
-site_description: Documentation for tes package.
-
-nav:
-  - About: docs/index.md
