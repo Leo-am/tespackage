@@ -10,7 +10,7 @@ setup(
                 'tes.base', 'tes.data', 'tes.filesets', 'tes.maps', 'tes.mca', 'tes.protocol', 'tes.registers', 'tes.calibration', 'tes.counts', 'tes.data_acquisition', 'tes.folder_management', 'tes.mca_control', 'tes.traces'
                 ],
     install_requires=['matplotlib', 'numpy', 'scipy', 'lmfit',
-              'pyzmq', 'pyserial', 'yaml', 'numba'],
+              'pyzmq', 'pyserial', 'pyyaml', 'numba'],
     version='0.2.0',
     description="Package for communicating with the hardware processor "
                 "connected to Transition Edge Sensors (TES) at "
